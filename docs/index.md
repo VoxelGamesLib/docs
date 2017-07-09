@@ -1,17 +1,13 @@
-# Welcome to MkDocs
+# VoxelGamesLib Documentation
 
-For full documentation visit [mkdocs.org](http://mkdocs.org).
+## Introduction
 
-## Commands
+Welcome to the VoxelGamesLib documentation.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs help` - Print this help message.
+VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.
 
-## Project layout
+If you are an end user wishing to configure a game that extends VoxelGamesLib, please refer to that game developer's documentation, or the [end-user wiki](https://github.com/VoxelGamesLib/VoxelGamesLibv2/wiki).
 
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+This documentation aims to get you started with developing games using VoxelGamesLib. By the end of this documentation you will be able to create advanced, yet organised, and hopefully fun to play games.
+
+This documentation assumes that you are familiar with the Java language and the Bukkit API.
