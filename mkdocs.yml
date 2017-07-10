@@ -13,11 +13,21 @@ edit_uri: 'blob/master/docs/'
 
 pages:
 - Introduction: index.md
-- Doctrine: doctrine.md
-- Getting started: getting-started.md
-- Terms: terms.md
-- Components: components.md
-- Maps: maps.md
+- Maps:
+  - Introduction: maps/introduction.md
+  - How to create a map: maps/how-to-create-a-map.md
+- General:
+  - Doctrine: general/doctrine.md
+  - Getting started: general/getting-started.md
+  - Terms: general/terms.md
+- Components:
+  - Features: components/features.md
+  - Phases: components/phases.md
+  - Games: components/games.md
+- Developer Area:
+  - How to write a feature: developer-area/how-to-write-a-feature.md
+  - How to write a phase: developer-area/how-to-write-a-phase.md
+  - How to write a game: developer-area/how-to-write-a-game.md
 - Contributor Area:
   - Contributors: contributor-area/contributors.md
   - Contribute Code: contributor-area/contribute-code.md
@@ -25,7 +35,8 @@ pages:
   - Contribute Translations: contributor-area/contribute-translations.md
   - Create bug reports or feature requests: contributor-area/create-bug-reports-or-feature-requests.md
   - Contributor's Corner: contributor-area/contributors-corner.md
-- Test: test/testpage.md
+- Test:
+  - Test: test/testpage.md
 
 extra:
   palette:
