@@ -16,72 +16,162 @@
             "title": "Introduction"
         },
         {
-            "location": "/doctrine/",
+            "location": "/maps/introduction/",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/maps/how-to-create-a-map/",
+            "text": "",
+            "title": "How to create a map"
+        },
+        {
+            "location": "/general/doctrine/",
             "text": "The VGL Doctrine\n\u00b6\n\n\nCreating a minigame should be more about being focused with game logic and creating cool things, rather than focusing on rewriting tons of code and having to watch out for bugs all of the time.\n\n\nVGL takes away the crap associated with making a minigame, and lets you, the developer, focus on creating something cool and focusing on game logic instead.\n\n\nVoxelGamesLib was made and is developed with certain fundamental ideas in mind. This doctrine will help you better understand them. Keep these in mind as you write your own games extending VGL.\n\n\nIdeology 1\n\u00b6\n\n\n...\n\n\nIdeology 2\n\u00b6\n\n\n...",
             "title": "Doctrine"
         },
         {
-            "location": "/doctrine/#the-vgl-doctrine",
+            "location": "/general/doctrine/#the-vgl-doctrine",
             "text": "Creating a minigame should be more about being focused with game logic and creating cool things, rather than focusing on rewriting tons of code and having to watch out for bugs all of the time.  VGL takes away the crap associated with making a minigame, and lets you, the developer, focus on creating something cool and focusing on game logic instead.  VoxelGamesLib was made and is developed with certain fundamental ideas in mind. This doctrine will help you better understand them. Keep these in mind as you write your own games extending VGL.",
             "title": "The VGL Doctrine"
         },
         {
-            "location": "/doctrine/#ideology-1",
+            "location": "/general/doctrine/#ideology-1",
             "text": "...",
             "title": "Ideology 1"
         },
         {
-            "location": "/doctrine/#ideology-2",
+            "location": "/general/doctrine/#ideology-2",
             "text": "...",
             "title": "Ideology 2"
         },
         {
-            "location": "/getting-started/",
+            "location": "/general/getting-started/",
             "text": "Getting Started\n\u00b6\n\n\nHopefully you've already read the doctrine to have a better understanding of the concepts and ideology behind VGL. The rest of the guide will assume you have an understanding of VGL concepts listed in the doctrine, such as a phase-oriented design.\n\n\nHere are some of the things that VGL does for you:\n\n\n\n\nFair, elo-based matchmaking\n\n\nRoles\n\n\nLocales\n\n\nPersistence\n\n\n\n\nVGL also contains many APIs to assist with development, for example:\n\n\n\n\nScoreboard API\n\n\nSign API\n\n\n\n\nThe next section will go on to talk about the key components that make up games in VGL:\n\n\n\n\nPhases\n\n\nFeatures",
             "title": "Getting started"
         },
         {
-            "location": "/getting-started/#getting-started",
+            "location": "/general/getting-started/#getting-started",
             "text": "Hopefully you've already read the doctrine to have a better understanding of the concepts and ideology behind VGL. The rest of the guide will assume you have an understanding of VGL concepts listed in the doctrine, such as a phase-oriented design.  Here are some of the things that VGL does for you:   Fair, elo-based matchmaking  Roles  Locales  Persistence   VGL also contains many APIs to assist with development, for example:   Scoreboard API  Sign API   The next section will go on to talk about the key components that make up games in VGL:   Phases  Features",
             "title": "Getting Started"
         },
         {
-            "location": "/components/",
+            "location": "/general/terms/",
+            "text": "Terms\n\u00b6\n\n\nWhen dealing with VoxelGamesLib you will stumble upon a bunch of terms\nand abbreviations. This place aims to be a central page to explain those\n\n\n\n\nVGL\n\n\nAbbreviation for this project, VoxelGamesLib\n\n\n\n\n\n\nPhase\n\n\nA phase in a game is a timespan where certain gameplay parts (Features)\nare active. It can end after a special time or after a certain condition\n\n\n\n\n\n\nFeature\n\n\nFeature often refers to a certain small, modular set of logic that is\nused to build phases and games. A feature can be nearly everything, from\ndisabling PVP or blocking block break to complex spawn or team selection \nalgorithms.\n\n\n\n\n\n\nGamemode\n\n\na gamemode is what people can play. it contains multiple phases. \n\n\n\n\n\n\nPR\n\n\nPull request, used when somebody wants to make changes to any of the projects\nrepos.\n\n\n\n\n\n\nRepo\n\n\nRepository. Basically projects hosted on github.\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nYou stumbled upon a term that is not listed here? Open a PR to add it or \nopen an issue so ppl can explain it to you (and add it here later)",
+            "title": "Terms"
+        },
+        {
+            "location": "/general/terms/#terms",
+            "text": "When dealing with VoxelGamesLib you will stumble upon a bunch of terms\nand abbreviations. This place aims to be a central page to explain those   VGL  Abbreviation for this project, VoxelGamesLib    Phase  A phase in a game is a timespan where certain gameplay parts (Features)\nare active. It can end after a special time or after a certain condition    Feature  Feature often refers to a certain small, modular set of logic that is\nused to build phases and games. A feature can be nearly everything, from\ndisabling PVP or blocking block break to complex spawn or team selection \nalgorithms.    Gamemode  a gamemode is what people can play. it contains multiple phases.     PR  Pull request, used when somebody wants to make changes to any of the projects\nrepos.    Repo  Repository. Basically projects hosted on github.      Tip  You stumbled upon a term that is not listed here? Open a PR to add it or \nopen an issue so ppl can explain it to you (and add it here later)",
+            "title": "Terms"
+        },
+        {
+            "location": "/components/features/",
+            "text": "Features\n\u00b6\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all features are listed and its parameters explained.\nThis may also contain links and documentation for 3\nrd\n party features.",
+            "title": "Features"
+        },
+        {
+            "location": "/components/features/#features",
+            "text": "There is not much here yet, but in the future this will be the place\nwhere all features are listed and its parameters explained.\nThis may also contain links and documentation for 3 rd  party features.",
+            "title": "Features"
+        },
+        {
+            "location": "/components/phases/",
+            "text": "Phases\n\u00b6\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all phases are listed and its parameters explained.\nThis may also contain links and documentation for 3\nrd\n party phases.",
+            "title": "Phases"
+        },
+        {
+            "location": "/components/phases/#phases",
+            "text": "There is not much here yet, but in the future this will be the place\nwhere all phases are listed and its parameters explained.\nThis may also contain links and documentation for 3 rd  party phases.",
+            "title": "Phases"
+        },
+        {
+            "location": "/components/games/",
+            "text": "Games\n\u00b6\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all public games are listed and explained.",
+            "title": "Games"
+        },
+        {
+            "location": "/components/games/#games",
+            "text": "There is not much here yet, but in the future this will be the place\nwhere all public games are listed and explained.",
+            "title": "Games"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/",
             "text": "",
-            "title": "Components"
+            "title": "How to write a feature"
         },
         {
-            "location": "/maps/",
-            "text": "Maps\n\u00b6\n\n\nCreating a map\n\u00b6\n\n\n...\n\n\nSubmitting a map to the maps repository\n\u00b6\n\n\n...",
-            "title": "Maps"
-        },
-        {
-            "location": "/maps/#maps",
+            "location": "/developer-area/how-to-write-a-phase/",
             "text": "",
-            "title": "Maps"
+            "title": "How to write a phase"
         },
         {
-            "location": "/maps/#creating-a-map",
-            "text": "...",
-            "title": "Creating a map"
-        },
-        {
-            "location": "/maps/#submitting-a-map-to-the-maps-repository",
-            "text": "...",
-            "title": "Submitting a map to the maps repository"
-        },
-        {
-            "location": "/contributors/",
+            "location": "/developer-area/how-to-write-a-game/",
             "text": "",
+            "title": "How to write a game"
+        },
+        {
+            "location": "/contributor-area/contributors/",
+            "text": "Contributors\n\u00b6\n\n\nVoxelGamesLib was made possible by many community members.\n\nYou can view the full list for the projects on github,\nsee the main project here as an example:\n\nhttps://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors\n\n\nThis page lists the major contributors and their role in the project.\n\n\n\n\nMiniDigger (\nadmin@minidigger.me\n)  \n\n\nRole: Founder and Maintainer  \n\n\nNotable contributions: General api design  \n\n\n\n\n\n\nLordRobust (aphelion)  \n\n\nRole: Maintainer, Addon Developer  \n\n\nNotable contributions: Chat System, API feedback, first addon  \n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFeeling like you made a major contribution? \nFeel free to open a pr and add yourself here!",
             "title": "Contributors"
         },
         {
-            "location": "/testpage/",
+            "location": "/contributor-area/contributors/#contributors",
+            "text": "VoxelGamesLib was made possible by many community members. \nYou can view the full list for the projects on github,\nsee the main project here as an example: https://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors  This page lists the major contributors and their role in the project.   MiniDigger ( admin@minidigger.me )    Role: Founder and Maintainer    Notable contributions: General api design      LordRobust (aphelion)    Role: Maintainer, Addon Developer    Notable contributions: Chat System, API feedback, first addon        Tip  Feeling like you made a major contribution? \nFeel free to open a pr and add yourself here!",
+            "title": "Contributors"
+        },
+        {
+            "location": "/contributor-area/contribute-code/",
+            "text": "Contributing code\n\u00b6\n\n\nThis is probably the hardest way to contribute since you need to pass\na proper review and test of all your changes.\n\nBut as scary as this might look at first, it's really not. This document\naims to guide you through the process of opening a PR and make the process\nas easy as possible for everyone.\n\n\nIf you just spot this page, thats very unluck since it has no actual content\nyet.",
+            "title": "Contribute Code"
+        },
+        {
+            "location": "/contributor-area/contribute-code/#contributing-code",
+            "text": "This is probably the hardest way to contribute since you need to pass\na proper review and test of all your changes. \nBut as scary as this might look at first, it's really not. This document\naims to guide you through the process of opening a PR and make the process\nas easy as possible for everyone.  If you just spot this page, thats very unluck since it has no actual content\nyet.",
+            "title": "Contributing code"
+        },
+        {
+            "location": "/contributor-area/contribute-maps/",
+            "text": "Contribute Maps\n\u00b6\n\n\nVGL has a public maps repository so that you can start your server without\nneeding to look for good maps first.\n\nYou can find the repo here \nhttps://github.com/VoxelGamesLib/maps\n\n\nIf you want to submit your map to that repository, just open a PR and fill\nout the information in the template (name, author, screenshot etc)",
+            "title": "Contribute Maps"
+        },
+        {
+            "location": "/contributor-area/contribute-maps/#contribute-maps",
+            "text": "VGL has a public maps repository so that you can start your server without\nneeding to look for good maps first. \nYou can find the repo here  https://github.com/VoxelGamesLib/maps  If you want to submit your map to that repository, just open a PR and fill\nout the information in the template (name, author, screenshot etc)",
+            "title": "Contribute Maps"
+        },
+        {
+            "location": "/contributor-area/contribute-translations/",
+            "text": "Contribute translations\n\u00b6\n\n\nThis page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.",
+            "title": "Contribute Translations"
+        },
+        {
+            "location": "/contributor-area/contribute-translations/#contribute-translations",
+            "text": "This page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.",
+            "title": "Contribute translations"
+        },
+        {
+            "location": "/contributor-area/create-bug-reports-or-feature-requests/",
+            "text": "",
+            "title": "Create bug reports or feature requests"
+        },
+        {
+            "location": "/contributor-area/contributors-corner/",
+            "text": "Contributors Corner\n\u00b6\n\n\nThis page lists useful information for maintainers or other team members.\n\n\nIts currently empty.",
+            "title": "Contributor's Corner"
+        },
+        {
+            "location": "/contributor-area/contributors-corner/#contributors-corner",
+            "text": "This page lists useful information for maintainers or other team members.  Its currently empty.",
+            "title": "Contributors Corner"
+        },
+        {
+            "location": "/test/testpage/",
             "text": "test page\n\u00b6\n\n\nthis is a test page to test the capabilities of the used doc software and its extensions\n\n\n\n\nNote\n\n\ntest 1234\n\n\n\n\n\n\nQuote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n1\n2\n3\npublic\n \nstatic\n \nvoid\n \nmain\n(\nString\n[]\n \nargs\n){\n\n\n    \nSystem\n.\nout\n.\nprintln\n(\n\"TEST!\"\n);\n\n\n}\n\n\n\n\n\n\n\n\"I suck at english\"\n1\n\n\n is on \n \nMan, these emoji are nice\n\n\n\n\n\n\n\n\n\n\nsome random footnote\u00a0\n\u21a9",
             "title": "Test"
         },
         {
-            "location": "/testpage/#test-page",
+            "location": "/test/testpage/#test-page",
             "text": "this is a test page to test the capabilities of the used doc software and its extensions   Note  test 1234    Quote  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.   1\n2\n3 public   static   void   main ( String []   args ){       System . out . println ( \"TEST!\" );  }    \"I suck at english\" 1   is on    Man, these emoji are nice      some random footnote\u00a0 \u21a9",
             "title": "test page"
         }
