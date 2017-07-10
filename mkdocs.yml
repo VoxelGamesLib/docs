@@ -13,6 +13,7 @@ pages:
 - Introduction: index.md
 - Doctrine: doctrine.md
 - Getting started: getting-started.md
+- Terms: terms.md
 - Components: components.md
 - Maps: maps.md
 - Contributors: contributors.md
