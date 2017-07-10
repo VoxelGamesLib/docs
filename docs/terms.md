@@ -15,7 +15,11 @@ and abbreviations. This place aims to be a central page to explain those
     algorithms.
 * Gamemode
     * a gamemode is what people can play. it contains multiple phases. 
-
+* PR
+    * Pull request, used when somebody wants to make changes to any of the projects
+    repos.
+* Repo
+    * Repository. Basically projects hosted on github.
 
 !!! tip
     You stumbled upon a term that is not listed here? Open a PR to add it or 

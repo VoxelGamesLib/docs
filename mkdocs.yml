@@ -3,11 +3,13 @@ site_description: Developer and user documentation for VoxelGamesLib v2
 site_author: VoxelGamesLib
 
 repo_name: 'VoxelGamesLib'
-repo_url: 'https://github.com/VoxelGamesLib/VoxelGamesLibv2'
+repo_url: 'https://github.com/VoxelGamesLib/docs'
 
 copyright: 'Copyright &copy; 2016 - 2017 VoxelGamesLib and Contributors'
 
 theme: 'material'
+
+edit_uri: 'blob/master/docs/'
 
 pages:
 - Introduction: index.md
@@ -16,8 +18,14 @@ pages:
 - Terms: terms.md
 - Components: components.md
 - Maps: maps.md
-- Contributors: contributors.md
-- Test: testpage.md
+- Contributor Area:
+  - Contributors: contributor-area/contributors.md
+  - Contribute Code: contributor-area/contribute-code.md
+  - Contribute Maps: contributor-area/contribute-maps.md
+  - Contribute Translations: contributor-area/contribute-translations.md
+  - Create bug reports or feature requests: contributor-area/create-bug-reports-or-feature-requests.md
+  - Contributor's Corner: contributor-area/contributors-corner.md
+- Test: test/testpage.md
 
 extra:
   palette:
