@@ -1,2 +1,2 @@
-# Built artefacts
-/site
+*.iml
+.idea/

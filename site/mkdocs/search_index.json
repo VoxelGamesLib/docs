@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "VoxelGamesLib Documentation\n\u00b6\n\n\nIntroduction\n\u00b6\n\n\nWelcome to the VoxelGamesLib documentation.\n\n\nVoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.\n\n\nIf you are an end user wishing to configure a game that extends VoxelGamesLib, please refer to that game developer's documentation, or the \nend-user wiki\n.\n\n\nThis documentation aims to get you started with developing games using VoxelGamesLib. By the end of this documentation you will be able to create advanced, yet organised, and hopefully fun to play games.\n\n\nThis documentation assumes that you are familiar with the Java language and the Bukkit API.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/#voxelgameslib-documentation",
+            "text": "",
+            "title": "VoxelGamesLib Documentation"
+        },
+        {
+            "location": "/#introduction",
+            "text": "Welcome to the VoxelGamesLib documentation.  VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.  If you are an end user wishing to configure a game that extends VoxelGamesLib, please refer to that game developer's documentation, or the  end-user wiki .  This documentation aims to get you started with developing games using VoxelGamesLib. By the end of this documentation you will be able to create advanced, yet organised, and hopefully fun to play games.  This documentation assumes that you are familiar with the Java language and the Bukkit API.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/doctrine/",
+            "text": "The VGL Doctrine\n\u00b6\n\n\nCreating a minigame should be more about being focused with game logic and creating cool things, rather than focusing on rewriting tons of code and having to watch out for bugs all of the time.\n\n\nVGL takes away the crap associated with making a minigame, and lets you, the developer, focus on creating something cool and focusing on game logic instead.\n\n\nVoxelGamesLib was made and is developed with certain fundamental ideas in mind. This doctrine will help you better understand them. Keep these in mind as you write your own games extending VGL.\n\n\nIdeology 1\n\u00b6\n\n\n...\n\n\nIdeology 2\n\u00b6\n\n\n...",
+            "title": "Doctrine"
+        },
+        {
+            "location": "/doctrine/#the-vgl-doctrine",
+            "text": "Creating a minigame should be more about being focused with game logic and creating cool things, rather than focusing on rewriting tons of code and having to watch out for bugs all of the time.  VGL takes away the crap associated with making a minigame, and lets you, the developer, focus on creating something cool and focusing on game logic instead.  VoxelGamesLib was made and is developed with certain fundamental ideas in mind. This doctrine will help you better understand them. Keep these in mind as you write your own games extending VGL.",
+            "title": "The VGL Doctrine"
+        },
+        {
+            "location": "/doctrine/#ideology-1",
+            "text": "...",
+            "title": "Ideology 1"
+        },
+        {
+            "location": "/doctrine/#ideology-2",
+            "text": "...",
+            "title": "Ideology 2"
+        },
+        {
+            "location": "/getting-started/",
+            "text": "Getting Started\n\u00b6\n\n\nHopefully you've already read the doctrine to have a better understanding of the concepts and ideology behind VGL. The rest of the guide will assume you have an understanding of VGL concepts listed in the doctrine, such as a phase-oriented design.\n\n\nHere are some of the things that VGL does for you:\n\n\n\n\nFair, elo-based matchmaking\n\n\nRoles\n\n\nLocales\n\n\nPersistence\n\n\n\n\nVGL also contains many APIs to assist with development, for example:\n\n\n\n\nScoreboard API\n\n\nSign API\n\n\n\n\nThe next section will go on to talk about the key components that make up games in VGL:\n\n\n\n\nPhases\n\n\nFeatures",
+            "title": "Getting started"
+        },
+        {
+            "location": "/getting-started/#getting-started",
+            "text": "Hopefully you've already read the doctrine to have a better understanding of the concepts and ideology behind VGL. The rest of the guide will assume you have an understanding of VGL concepts listed in the doctrine, such as a phase-oriented design.  Here are some of the things that VGL does for you:   Fair, elo-based matchmaking  Roles  Locales  Persistence   VGL also contains many APIs to assist with development, for example:   Scoreboard API  Sign API   The next section will go on to talk about the key components that make up games in VGL:   Phases  Features",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/components/",
+            "text": "",
+            "title": "Components"
+        },
+        {
+            "location": "/maps/",
+            "text": "Maps\n\u00b6\n\n\nCreating a map\n\u00b6\n\n\n...\n\n\nSubmitting a map to the maps repository\n\u00b6\n\n\n...",
+            "title": "Maps"
+        },
+        {
+            "location": "/maps/#maps",
+            "text": "",
+            "title": "Maps"
+        },
+        {
+            "location": "/maps/#creating-a-map",
+            "text": "...",
+            "title": "Creating a map"
+        },
+        {
+            "location": "/maps/#submitting-a-map-to-the-maps-repository",
+            "text": "...",
+            "title": "Submitting a map to the maps repository"
+        },
+        {
+            "location": "/contributors/",
+            "text": "",
+            "title": "Contributors"
+        },
+        {
+            "location": "/testpage/",
+            "text": "test page\n\u00b6\n\n\nthis is a test page to test the capabilities of the used doc software and its extensions\n\n\n\n\nNote\n\n\ntest 1234\n\n\n\n\n\n\nQuote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n1\n2\n3\npublic\n \nstatic\n \nvoid\n \nmain\n(\nString\n[]\n \nargs\n){\n\n\n    \nSystem\n.\nout\n.\nprintln\n(\n\"TEST!\"\n);\n\n\n}\n\n\n\n\n\n\n\n\"I suck at english\"\n1\n\n\n is on \n \nMan, these emoji are nice\n\n\n\n\n\n\n\n\n\n\nsome random footnote\u00a0\n\u21a9",
+            "title": "Test"
+        },
+        {
+            "location": "/testpage/#test-page",
+            "text": "this is a test page to test the capabilities of the used doc software and its extensions   Note  test 1234    Quote  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.   1\n2\n3 public   static   void   main ( String []   args ){       System . out . println ( \"TEST!\" );  }    \"I suck at english\" 1   is on    Man, these emoji are nice      some random footnote\u00a0 \u21a9",
+            "title": "test page"
+        }
+    ]
+}

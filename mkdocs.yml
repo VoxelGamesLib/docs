@@ -1,8 +1,13 @@
 site_name: VoxelGamesLib Documentation
-site_description: Developer documentation for VoxelGamesLib v2
+site_description: Developer and user documentation for VoxelGamesLib v2
 site_author: VoxelGamesLib
 
-theme: readthedocs
+repo_name: 'VoxelGamesLib'
+repo_url: 'https://github.com/VoxelGamesLib/VoxelGamesLibv2'
+
+copyright: 'Copyright &copy; 2016 - 2017 VoxelGamesLib and Contributors'
+
+theme: 'material'
 
 pages:
 - Introduction: index.md
@@ -11,6 +16,41 @@ pages:
 - Components: components.md
 - Maps: maps.md
 - Contributors: contributors.md
+- Test: testpage.md
+
+extra:
+  palette:
+    primary: 'amber'
+    accent: 'orange'
+  logo: 'images/logo.svg'
+  social:
+    - type: 'github'
+      link: 'https://github.com/VoxelGamesLib'
+    - type: 'twitter'
+      link: 'https://twitter.com/xMiniDiggerx'
+  feature:
+    tabs: true
 
 markdown_extensions:
+  # notes quotes etc
   - admonition
+  # code highlights
+  - codehilite(linenums=true)
+  # footnotes
+  - footnotes
+  # table of contents, permalinks
+  - toc(permalink=true)
+  # bunch of random crap
+  - pymdownx.arithmatex
+  - pymdownx.betterem(smart_enable=all)
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences
+  - pymdownx.tasklist(custom_checkbox=true)
+  - pymdownx.tilde
