@@ -30,6 +30,7 @@ pages:
   - How to write a phase: developer-area/how-to-write-a-phase.md
   - How to write a game: developer-area/how-to-write-a-game.md
 - Contributor Area:
+  - General: contributor-area/general.md
   - Contributors: contributor-area/contributors.md
   - Contribute Code: contributor-area/contribute-code.md
   - Contribute Maps: contributor-area/contribute-maps.md
