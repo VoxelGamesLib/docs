@@ -21,6 +21,7 @@ pages:
   - Introduction: maps/introduction.md
   - How to create a map: maps/how-to-create-a-map.md
 - Components:
+  - General: components/general.md
   - Features: components/features.md
   - Phases: components/phases.md
   - Games: components/games.md
