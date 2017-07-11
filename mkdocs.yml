@@ -13,13 +13,13 @@ edit_uri: 'blob/master/docs/'
 
 pages:
 - Introduction: index.md
-- Maps:
-  - Introduction: maps/introduction.md
-  - How to create a map: maps/how-to-create-a-map.md
 - General:
   - Doctrine: general/doctrine.md
   - Getting started: general/getting-started.md
   - Terms: general/terms.md
+- Maps:
+  - Introduction: maps/introduction.md
+  - How to create a map: maps/how-to-create-a-map.md
 - Components:
   - Features: components/features.md
   - Phases: components/phases.md
