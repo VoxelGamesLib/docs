@@ -5,7 +5,7 @@
 Welcome to the VoxelGamesLib documentation.
 
 VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.  
-It aims to make to easy for both developers, admins and users to create, run and play minigames at scale.
+It aims to make to easy for developers, admins and users to create, run and play minigames at scale.
 
 This documentation is targeted at all kind of users of this framework.  
 You can find general information in the [General](/general/getting-started) section.  
