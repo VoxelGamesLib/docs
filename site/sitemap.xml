@@ -4,44 +4,28 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
-    <url>
-     <loc>/maps/introduction/</loc>
-     <lastmod>2017-07-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/maps/how-to-create-a-map/</loc>
-     <lastmod>2017-07-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     
 
     
         
     <url>
      <loc>/general/doctrine/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/general/getting-started/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/general/terms/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -50,20 +34,42 @@
     
         
     <url>
+     <loc>/maps/introduction/</loc>
+     <lastmod>2017-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/maps/how-to-create-a-map/</loc>
+     <lastmod>2017-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/components/general/</loc>
+     <lastmod>2017-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/components/features/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/components/phases/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/components/games/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -73,19 +79,19 @@
         
     <url>
      <loc>/developer-area/how-to-write-a-feature/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/developer-area/how-to-write-a-phase/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/developer-area/how-to-write-a-game/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -94,38 +100,44 @@
     
         
     <url>
+     <loc>/contributor-area/general/</loc>
+     <lastmod>2017-07-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/contributor-area/contributors/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contributor-area/contribute-code/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contributor-area/contribute-maps/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contributor-area/contribute-translations/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contributor-area/create-bug-reports-or-feature-requests/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/contributor-area/contributors-corner/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -135,7 +147,7 @@
         
     <url>
      <loc>/test/testpage/</loc>
-     <lastmod>2017-07-10</lastmod>
+     <lastmod>2017-07-11</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

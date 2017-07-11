@@ -2,7 +2,7 @@
     "docs": [
         {
             "location": "/",
-            "text": "VoxelGamesLib Documentation\n\u00b6\n\n\nIntroduction\n\u00b6\n\n\nWelcome to the VoxelGamesLib documentation.\n\n\nVoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.\n\n\nIf you are an end user wishing to configure a game that extends VoxelGamesLib, please refer to that game developer's documentation, or the \nend-user wiki\n.\n\n\nThis documentation aims to get you started with developing games using VoxelGamesLib. By the end of this documentation you will be able to create advanced, yet organised, and hopefully fun to play games.\n\n\nThis documentation assumes that you are familiar with the Java language and the Bukkit API.",
+            "text": "VoxelGamesLib Documentation\n\u00b6\n\n\nIntroduction\n\u00b6\n\n\nWelcome to the VoxelGamesLib documentation.\n\n\nVoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.\n\nIt aims to make to easy for both developers, admins and users to create, run and play minigames at scale.\n\n\nThis documentation is targeted at all kind of users of this framework.\n\nYou can find general information in the \nGeneral\n section.\n\nMap makers will find the \nMaps\n section useful.\n\nIf you want to build your own gamemode (either via the game definition files or via code) you might\nfind the list of components useful, you can find it \nhere\n.\n\nThat section also contains a \nlist of gamemodes\n other developers created.\n\nIf you are a developer and plan on writing your own features, phases or games you will find the \n\ndeveloper area\n useful.\n\nIf you want to help out the project in any way (no coding required!) you can take a look at the\n\ncontributor area\n to find out who you can help.",
             "title": "Introduction"
         },
         {
@@ -12,18 +12,8 @@
         },
         {
             "location": "/#introduction",
-            "text": "Welcome to the VoxelGamesLib documentation.  VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.  If you are an end user wishing to configure a game that extends VoxelGamesLib, please refer to that game developer's documentation, or the  end-user wiki .  This documentation aims to get you started with developing games using VoxelGamesLib. By the end of this documentation you will be able to create advanced, yet organised, and hopefully fun to play games.  This documentation assumes that you are familiar with the Java language and the Bukkit API.",
+            "text": "Welcome to the VoxelGamesLib documentation.  VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework. \nIt aims to make to easy for both developers, admins and users to create, run and play minigames at scale.  This documentation is targeted at all kind of users of this framework. \nYou can find general information in the  General  section. \nMap makers will find the  Maps  section useful. \nIf you want to build your own gamemode (either via the game definition files or via code) you might\nfind the list of components useful, you can find it  here . \nThat section also contains a  list of gamemodes  other developers created. \nIf you are a developer and plan on writing your own features, phases or games you will find the  developer area  useful. \nIf you want to help out the project in any way (no coding required!) you can take a look at the contributor area  to find out who you can help.",
             "title": "Introduction"
-        },
-        {
-            "location": "/maps/introduction/",
-            "text": "",
-            "title": "Introduction"
-        },
-        {
-            "location": "/maps/how-to-create-a-map/",
-            "text": "",
-            "title": "How to create a map"
         },
         {
             "location": "/general/doctrine/",
@@ -64,6 +54,26 @@
             "location": "/general/terms/#terms",
             "text": "When dealing with VoxelGamesLib you will stumble upon a bunch of terms\nand abbreviations. This place aims to be a central page to explain those   VGL  Abbreviation for this project, VoxelGamesLib    Phase  A phase in a game is a timespan where certain gameplay parts (Features)\nare active. It can end after a special time or after a certain condition    Feature  Feature often refers to a certain small, modular set of logic that is\nused to build phases and games. A feature can be nearly everything, from\ndisabling PVP or blocking block break to complex spawn or team selection \nalgorithms.    Gamemode  a gamemode is what people can play. it contains multiple phases.     PR  Pull request, used when somebody wants to make changes to any of the projects\nrepos.    Repo  Repository. Basically projects hosted on github.      Tip  You stumbled upon a term that is not listed here? Open a PR to add it or \nopen an issue so ppl can explain it to you (and add it here later)",
             "title": "Terms"
+        },
+        {
+            "location": "/maps/introduction/",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/maps/how-to-create-a-map/",
+            "text": "",
+            "title": "How to create a map"
+        },
+        {
+            "location": "/components/general/",
+            "text": "Components\n\u00b6\n\n\nThere are 3 types of components in VGL\n\n\n\n\n\n\nFeatures\n\n  Feature often refers to a certain small, modular set of logic that is\n  used to build phases and games. A feature can be nearly everything, from\n  disabling PVP or blocking block break to complex spawn or team selection \n  algorithms.\n\n  You can find a list of features \nhere\n\n\n\n\n\n\nPhases\n\n  A phase in a game is a timespan where certain gameplay parts (Features)\n  are active. It can end after a special time or after a certain condition.\n\n  You can find a list of phases \nhere\n\n\n\n\n\n\nGames\n\n  a game or gamemode is what people can play. it contains multiple phases.\n  You can find a list of gamemodes \nhere",
+            "title": "General"
+        },
+        {
+            "location": "/components/general/#components",
+            "text": "There are 3 types of components in VGL    Features \n  Feature often refers to a certain small, modular set of logic that is\n  used to build phases and games. A feature can be nearly everything, from\n  disabling PVP or blocking block break to complex spawn or team selection \n  algorithms. \n  You can find a list of features  here    Phases \n  A phase in a game is a timespan where certain gameplay parts (Features)\n  are active. It can end after a special time or after a certain condition. \n  You can find a list of phases  here    Games \n  a game or gamemode is what people can play. it contains multiple phases.\n  You can find a list of gamemodes  here",
+            "title": "Components"
         },
         {
             "location": "/components/features/",
@@ -109,6 +119,16 @@
             "location": "/developer-area/how-to-write-a-game/",
             "text": "",
             "title": "How to write a game"
+        },
+        {
+            "location": "/contributor-area/general/",
+            "text": "Contributing to VoxelGamesLib\n\u00b6\n\n\nHey there!\n\nThank for considering to contribute to VGL! Together we can make this thing even more\nawesome.\n\nThis area aims to be the central point for contributors and ppl who want to become one.\n\n\nThere are many ways you can contribute:  \n\n\n\n\nCreate Bugs Reports or Feature Requests\n\n  Found an issue? Wants something added? Help making VGL better with your ideas!\n\n  Learn more \nhere\n  \n\n\nContribute Translations\n\n  You are a walking dictionary or just generally good at languages? Consider helping\n  to translate this project so even more people can use it!  \n\n  Learn more \nhere\n  \n\n\nContribute Maps\n\n  Build a cool map you want to share with others so that more players can enjoy it?\n  Then this is for you!\n\n  Learn more \nhere\n  \n\n\nContribute Code\n\n  You want to help us out with your coding skills? Found out what you can do in this section!\n\n  Learn more \nhere\n  \n\n\n\n\nThis section also hosts the \ncontributors corner\n where news and other\nstuff that is relevant for contributors is posted.\n\n\nAnd our \"Hall of Fame\" of contributors is located in the other corner \nhere",
+            "title": "General"
+        },
+        {
+            "location": "/contributor-area/general/#contributing-to-voxelgameslib",
+            "text": "Hey there! \nThank for considering to contribute to VGL! Together we can make this thing even more\nawesome. \nThis area aims to be the central point for contributors and ppl who want to become one.  There are many ways you can contribute:     Create Bugs Reports or Feature Requests \n  Found an issue? Wants something added? Help making VGL better with your ideas! \n  Learn more  here     Contribute Translations \n  You are a walking dictionary or just generally good at languages? Consider helping\n  to translate this project so even more people can use it!   \n  Learn more  here     Contribute Maps \n  Build a cool map you want to share with others so that more players can enjoy it?\n  Then this is for you! \n  Learn more  here     Contribute Code \n  You want to help us out with your coding skills? Found out what you can do in this section! \n  Learn more  here      This section also hosts the  contributors corner  where news and other\nstuff that is relevant for contributors is posted.  And our \"Hall of Fame\" of contributors is located in the other corner  here",
+            "title": "Contributing to VoxelGamesLib"
         },
         {
             "location": "/contributor-area/contributors/",
