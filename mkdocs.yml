@@ -31,6 +31,13 @@ pages:
   - How to write a phase: developer-area/how-to-write-a-phase.md
   - How to write a game: developer-area/how-to-write-a-game.md
   - Introduction to Guice: developer-area/introduction-to-guice.md
+  - APIs: 
+    - Scoreboard API: developer-area/apis/scoreboard.md
+    - Kit API: developer-area/apis/kit.md
+    - Sign API: developer-area/apis/sign.md
+    - Elo API: developer-area/apis/elo.md
+    - Command API: developer-area/apis/command.md
+    - Ability API: developer-area/apis/ability.md
 - Contributor Area:
   - General: contributor-area/general.md
   - Contributors: contributor-area/contributors.md
