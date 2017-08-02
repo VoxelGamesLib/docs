@@ -3,7 +3,8 @@
 Features are small parts of a game that gets added to a phase. Features are the modular core of VGL.  
 You should try to create as many features as possible so that game designers can easily remix them into new games.  
 
-A feature consits of multile parts:  //TODO make this a list  
+A feature consits of multile parts:
+
 * [A @FeatureInfo annotation](#featureinfo)   
 * [@Expose'd variables](#exposed-variables)   
 * [Event Handlers](#event-handlers)  
@@ -81,7 +82,8 @@ scoreboard.createAndAddLine(ChatColor.YELLOW + "" + ChatColor.BOLD + "Author: ")
 
 ## Start/Stop/Tick methods
 
-VGL also provides you with some additonal methods you can override:  // TODO make this a list  
+VGL also provides you with some additonal methods you can override: 
+
 * void start(): called when the phase this feature is attached to starts  
 * void stop(): called when the phase this feature is attached to stops  
 * void tick(): called when the phase this feature is attached to ticks (20 times each second)  
