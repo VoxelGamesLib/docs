@@ -57,6 +57,14 @@ public void onBlockBreak(BlockBreakEvent event) {
 // your event code
 }
 ```
+Another cool feature `@GameEvent` provides is the ability to easily get a user object from non-vgl events.  
+You just add a second parameter of type `User` to the method:  
+```java
+@GameEvent
+public void onBlockBreak(BlockBreakEvent event, User user) {
+    log.info(user.getRawDisplayName() + " broke a block!");
+}
+```
 
 ## Dependencies
 

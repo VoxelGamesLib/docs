@@ -1012,6 +1012,17 @@ Generally, <code class="codehilite">@GameEvent</code> works exactly as <code cla
 <span class="c1">// your event code</span>
 <span class="o">}</span>
 </pre></div>
+</td></tr></table>
+Another cool feature <code class="codehilite">@GameEvent</code> provides is the ability to easily get a user object from non-vgl events.<br />
+You just add a second parameter of type <code class="codehilite">User</code> to the method:<br />
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nd">@GameEvent</span>
+<span class="kd">public</span> <span class="kt">void</span> <span class="nf">onBlockBreak</span><span class="o">(</span><span class="n">BlockBreakEvent</span> <span class="n">event</span><span class="o">,</span> <span class="n">User</span> <span class="n">user</span><span class="o">)</span> <span class="o">{</span>
+    <span class="n">log</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="n">user</span><span class="o">.</span><span class="na">getRawDisplayName</span><span class="o">()</span> <span class="o">+</span> <span class="s">&quot; broke a block!&quot;</span><span class="o">);</span>
+<span class="o">}</span>
+</pre></div>
 </td></tr></table></p>
 <h2 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h2>
 <p>Some features require that other features are active. For example there is a Scoreboard feature, that provides scoreboards for all players.<br />
