@@ -16,7 +16,7 @@
       
         <link rel="shortcut icon" href="../../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.0">
     
     
       
@@ -27,7 +27,7 @@
       <script src="../../assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/application-769c285a91.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/application-bfecc7305d.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/application-02c2a4388f.palette.css">
       
@@ -94,17 +94,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -210,7 +210,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="../how-to-write-a-feature/" title="Developer Area" class="md-tabs__link md-tabs__link--active">
+        <a href="../how-to-write-an-addon/" title="Developer Area" class="md-tabs__link md-tabs__link--active">
           Developer Area
         </a>
       
@@ -508,6 +508,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../how-to-write-an-addon/" title="How to write an addon" class="md-nav__link">
+      How to write an addon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../how-to-write-a-feature/" title="How to write a feature" class="md-nav__link">
       How to write a feature
     </a>
@@ -537,11 +549,121 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
     
     <a href="./" title="How to write a game" class="md-nav__link md-nav__link--active">
       How to write a game
     </a>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../introduction-to-guice/" title="Introduction to Guice" class="md-nav__link">
+      Introduction to Guice
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6">
+    
+    <label class="md-nav__link" for="nav-5-6">
+      APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-6">
+        APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apis/scoreboard/" title="Scoreboard API" class="md-nav__link">
+      Scoreboard API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apis/kit/" title="Kit API" class="md-nav__link">
+      Kit API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apis/sign/" title="Sign API" class="md-nav__link">
+      Sign API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apis/elo/" title="Elo API" class="md-nav__link">
+      Elo API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apis/command/" title="Command API" class="md-nav__link">
+      Command API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../apis/ability/" title="Ability API" class="md-nav__link">
+      Ability API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -708,6 +830,8 @@
 <nav class="md-nav md-nav--secondary">
   
   
+    
+  
   
 </nav>
                   </div>
@@ -722,9 +846,83 @@
                   <a href="https://github.com/VoxelGamesLib/docs/blob/master/docs/developer-area\how-to-write-a-game.md" title="Edit this page" class="md-icon md-content__icon">edit</a>
                 
                 
-                  <h1>How to write a game</h1>
-                
-                
+                <h1 id="how-to-write-a-game">How to write a game<a class="headerlink" href="#how-to-write-a-game" title="Permanent link">&para;</a></h1>
+<p>A Game is made up from multiple parts. First you want to make sure you have some phases and features you want to use.
+Be sure to check out the other tutorials for that. 
+Then you can create a game class. It shoudl extend <code class="codehilite">AbstractGame</code> and have a <code class="codehilite">@GameInfo</code> annotation:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="nd">@GameInfo</span><span class="o">(</span><span class="n">name</span> <span class="o">=</span> <span class="s">&quot;1vs1&quot;</span><span class="o">,</span> <span class="n">author</span> <span class="o">=</span> <span class="s">&quot;MiniDigger&quot;</span><span class="o">,</span> <span class="n">version</span> <span class="o">=</span> <span class="s">&quot;v1.0&quot;</span><span class="o">,</span> <span class="n">description</span> <span class="o">=</span> <span class="s">&quot;1vs1 Description&quot;</span><span class="o">)</span>
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">OneVsOneGame</span> <span class="kd">extends</span> <span class="n">AbstractGame</span>
+</pre></div>
+</td></tr></table>
+Then you need to have a constructor. You want to give the super constructor the gamemode constant you made in your addon class
+(If you didn't do that, go back to that step <a href="../how-to-write-an-addon">here</a>).<br />
+Your constructor should look like this:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="kd">public</span> <span class="nf">OneVsOneGame</span><span class="o">()</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">(</span><span class="n">OneVsOnePlugin</span><span class="o">.</span><span class="na">GAMEMODE</span><span class="o">);</span>
+    <span class="o">}</span>
+</pre></div>
+</td></tr></table>
+Then you have two methods: <code class="codehilite">initGameFromModule</code> and <code class="codehilite">initGameFromDefinition.</code> 
+Your games will be serialized into a game definition by default, so that game designers can edit it easily.<br />
+That mean, that you only want to create phases and features in the <code class="codehilite">initGameFromModule</code> method.
+Your initGameFromDefinition method should just be this:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2
+3
+4
+5
+6</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">initGameFromDefinition</span><span class="o">(</span><span class="nd">@Nonnull</span> <span class="n">GameDefinition</span> <span class="n">gameDefinition</span><span class="o">)</span> <span class="o">{</span>
+        <span class="kd">super</span><span class="o">.</span><span class="na">initGameFromDefinition</span><span class="o">(</span><span class="n">gameDefinition</span><span class="o">);</span>
+
+        <span class="n">loadMap</span><span class="o">();</span>
+    <span class="o">}</span>
+</pre></div>
+</td></tr></table>
+<code class="codehilite">loadMap</code> will make sure that the lobby map is loaded.<br />
+You define all your phases in the <code class="codehilite">initGameFromModule</code> method:
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
+ 2
+ 3
+ 4
+ 5
+ 6
+ 7
+ 8
+ 9
+10
+11
+12
+13
+14
+15
+16</pre></div></td><td class="code"><div class="codehilite"><pre><span></span>    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">initGameFromModule</span><span class="o">()</span> <span class="o">{</span>
+        <span class="n">setMinPlayers</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+        <span class="n">setMaxPlayers</span><span class="o">(</span><span class="mi">2</span><span class="o">);</span>
+
+        <span class="n">LobbyWithVotePhase</span> <span class="n">lobbyWithVotePhase</span> <span class="o">=</span> <span class="n">createPhase</span><span class="o">(</span><span class="n">LobbyWithVotePhase</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">GracePhase</span> <span class="n">gracePhase</span> <span class="o">=</span> <span class="n">createPhase</span><span class="o">(</span><span class="n">GracePhase</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+        <span class="n">OneVsOnePhase</span> <span class="n">survivalGamesPhase</span> <span class="o">=</span> <span class="n">createPhase</span><span class="o">(</span><span class="n">OneVsOnePhase</span><span class="o">.</span><span class="na">class</span><span class="o">);</span>
+
+        <span class="n">lobbyWithVotePhase</span><span class="o">.</span><span class="na">setNextPhase</span><span class="o">(</span><span class="n">gracePhase</span><span class="o">);</span>
+        <span class="n">gracePhase</span><span class="o">.</span><span class="na">setNextPhase</span><span class="o">(</span><span class="n">survivalGamesPhase</span><span class="o">);</span>
+
+        <span class="n">activePhase</span> <span class="o">=</span> <span class="n">lobbyWithVotePhase</span><span class="o">;</span>
+
+        <span class="n">loadMap</span><span class="o">();</span>
+    <span class="o">}</span>
+</pre></div>
+</td></tr></table>
+As you can see, there are multiple steps:
+First, you spefify the min and maxmium amount of players required to play this game.<br />
+Then you create all your phases.<br />
+After that, you make sure the order of phases is right.<br />
+In the end, you specify the first active phase and load the lobby map.
+And thats all! Now you can just start a game ingame via <code class="codehilite">/game start &lt;gamemode&gt;</code>!</p>
                 
                   
                 
@@ -758,13 +956,13 @@
           </a>
         
         
-          <a href="../../contributor-area/general/" title="General" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../introduction-to-guice/" title="Introduction to Guice" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                General
+                Introduction to Guice
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">
@@ -808,7 +1006,7 @@
       
     </div>
     
-      <script src="../../assets/javascripts/application-c35428f87f.js"></script>
+      <script src="../../assets/javascripts/application-1d6ee6ee6c.js"></script>
       
       
       <script>app.initialize({url:{base:"../.."}})</script>

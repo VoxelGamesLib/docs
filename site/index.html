@@ -16,7 +16,7 @@
       
         <link rel="shortcut icon" href="./assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.7.4">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.8.0">
     
     
       
@@ -27,7 +27,7 @@
       <script src="./assets/javascripts/modernizr-1df76c4e58.js"></script>
     
     
-      <link rel="stylesheet" href="./assets/stylesheets/application-769c285a91.css">
+      <link rel="stylesheet" href="./assets/stylesheets/application-bfecc7305d.css">
       
         <link rel="stylesheet" href="./assets/stylesheets/application-02c2a4388f.palette.css">
       
@@ -90,17 +90,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
+<div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
       <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result" data-md-lang-search="">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -204,7 +204,7 @@
   
     <li class="md-tabs__item">
       
-        <a href="developer-area/how-to-write-a-feature/" title="Developer Area" class="md-tabs__link">
+        <a href="developer-area/how-to-write-an-addon/" title="Developer Area" class="md-tabs__link">
           Developer Area
         </a>
       
@@ -318,6 +318,54 @@
         <li class="md-nav__item">
   <a href="#introduction" title="Introduction" class="md-nav__link">
     Introduction
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-game-developers" title="For Game Developers" class="md-nav__link">
+    For Game Developers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-game-designers" title="For Game Designers" class="md-nav__link">
+    For Game Designers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-map-builders" title="For Map Builders" class="md-nav__link">
+    For Map Builders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-server-admins" title="For Server Admins" class="md-nav__link">
+    For Server Admins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-players" title="For Players" class="md-nav__link">
+    For Players
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-documentation" title="About this documentation" class="md-nav__link">
+    About this documentation
   </a>
   
 </li>
@@ -536,6 +584,18 @@
 
 
   <li class="md-nav__item">
+    <a href="developer-area/how-to-write-an-addon/" title="How to write an addon" class="md-nav__link">
+      How to write an addon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="developer-area/how-to-write-a-feature/" title="How to write a feature" class="md-nav__link">
       How to write a feature
     </a>
@@ -563,6 +623,114 @@
     <a href="developer-area/how-to-write-a-game/" title="How to write a game" class="md-nav__link">
       How to write a game
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/introduction-to-guice/" title="Introduction to Guice" class="md-nav__link">
+      Introduction to Guice
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6">
+    
+    <label class="md-nav__link" for="nav-5-6">
+      APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-5-6">
+        APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/apis/scoreboard/" title="Scoreboard API" class="md-nav__link">
+      Scoreboard API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/apis/kit/" title="Kit API" class="md-nav__link">
+      Kit API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/apis/sign/" title="Sign API" class="md-nav__link">
+      Sign API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/apis/elo/" title="Elo API" class="md-nav__link">
+      Elo API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/apis/command/" title="Command API" class="md-nav__link">
+      Command API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="developer-area/apis/ability/" title="Ability API" class="md-nav__link">
+      Ability API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -740,6 +908,54 @@
     Introduction
   </a>
   
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#for-game-developers" title="For Game Developers" class="md-nav__link">
+    For Game Developers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-game-designers" title="For Game Designers" class="md-nav__link">
+    For Game Designers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-map-builders" title="For Map Builders" class="md-nav__link">
+    For Map Builders
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-server-admins" title="For Server Admins" class="md-nav__link">
+    For Server Admins
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#for-players" title="For Players" class="md-nav__link">
+    For Players
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#about-this-documentation" title="About this documentation" class="md-nav__link">
+    About this documentation
+  </a>
+  
 </li>
       
       
@@ -764,6 +980,29 @@
 <p>Welcome to the VoxelGamesLib documentation.</p>
 <p>VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.<br />
 It aims to make to easy for developers, admins and users to create, run and play minigames at scale.</p>
+<h3 id="for-game-developers">For Game Developers<a class="headerlink" href="#for-game-developers" title="Permanent link">&para;</a></h3>
+<p>Game Developers will make use of the modular apis VGL offers to make creating minigames pain free and allow
+them to focus on whats important: the gameplay. The structure of VGL allows developers to easily write many games
+without duplicating any code.</p>
+<h3 id="for-game-designers">For Game Designers<a class="headerlink" href="#for-game-designers" title="Permanent link">&para;</a></h3>
+<p>Game Designers do not need to know how to write java, they can modify existing games just by editing values 
+in a json file. That allows game designers to quickly try out new things without relying on a game developer.
+They can even make completly new games, just by combinding and configuring existing features.</p>
+<h3 id="for-map-builders">For Map Builders<a class="headerlink" href="#for-map-builders" title="Permanent link">&para;</a></h3>
+<p>Map Builders will enojy how easy it is to setup maps for VGL. They can setup their maps right from the game, marking
+important locations (spawns, chests, drop points...) via skulls. VGL also allows you to easily iterate over the map, making
+changes to the world or the markers very easy.</p>
+<h3 id="for-server-admins">For Server Admins<a class="headerlink" href="#for-server-admins" title="Permanent link">&para;</a></h3>
+<p>Server Admins will like that VGL supports endless relational databases thanks to our choice of hibernate as our DB framework.
+That means you can use whatever DB fits best into your enviroment. VGL also makes managing maps easy as they come in a (configurable) 
+git repo by default. </p>
+<h3 id="for-players">For Players<a class="headerlink" href="#for-players" title="Permanent link">&para;</a></h3>
+<p>VGL will allow players to easily play their favorite minigames, with support for stuff like ELO based skill tracking and
+extensive stats tracking. They will also like that you have a seamless integration, every game UX is the same, making it
+easy to learn new modes.</p>
+<p><em>To sum it up: we care about every user of this framework, from the game developers up to the end users, and aim to provide the 
+best experience possible for everyone.</em></p>
+<h2 id="about-this-documentation">About this documentation<a class="headerlink" href="#about-this-documentation" title="Permanent link">&para;</a></h2>
 <p>This documentation is targeted at all kind of users of this framework.<br />
 You can find general information in the <a href="./general/getting-started">General</a> section.<br />
 Map makers will find the <a href="./maps/introduction">Maps</a> section useful.<br />
@@ -843,7 +1082,7 @@ If you want to help out the project in any way (no coding required!) you can tak
       
     </div>
     
-      <script src="./assets/javascripts/application-c35428f87f.js"></script>
+      <script src="./assets/javascripts/application-1d6ee6ee6c.js"></script>
       
       
       <script>app.initialize({url:{base:"."}})</script>
