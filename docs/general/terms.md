@@ -20,6 +20,12 @@ and abbreviations. This place aims to be a central page to explain those
     repos.
 * Repo
     * Repository. Basically projects hosted on github.
+* Game Developer
+    * Someone who extends VGL by writing phases, features or games using the API VGL provides.
+* Game Designer
+    * Someone who uses game definitions to custimize games and remix entrily new games.
+* Map Builder
+    * Someone who builds maps and uses the world creator in VGL to add it into the system so that games can use them.
 
 !!! tip
     You stumbled upon a term that is not listed here? Open a PR to add it or 
