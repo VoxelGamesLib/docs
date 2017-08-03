@@ -34,22 +34,6 @@
     
         
     <url>
-     <loc>/maps/introduction/</loc>
-     <lastmod>2017-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/maps/how-to-create-a-map/</loc>
-     <lastmod>2017-08-03</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
      <loc>/components/general/</loc>
      <lastmod>2017-08-03</lastmod>
      <changefreq>daily</changefreq>
@@ -73,6 +57,30 @@
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+        
+    <url>
+     <loc>/maps/introduction/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/maps/how-to-create-a-map/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+    <url>
+     <loc>/designer-area/</loc>
+     <lastmod>2017-08-03</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
     
 
     
