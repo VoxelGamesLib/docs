@@ -1,0 +1,349 @@
+{
+    "docs": [
+        {
+            "location": "/",
+            "text": "VoxelGamesLib Documentation\n\u00b6\n\n\nIntroduction\n\u00b6\n\n\nWelcome to the VoxelGamesLib documentation.\n\n\nVoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework.\n\nIt aims to make to easy for developers, admins and users to create, run and play minigames at scale.\n\n\nFor Game Developers\n\u00b6\n\n\nGame Developers will make use of the modular apis VGL offers to make creating minigames pain free and allow\nthem to focus on whats important: the gameplay. The structure of VGL allows developers to easily write many games\nwithout duplicating any code.\n\n\nFor Game Designers\n\u00b6\n\n\nGame Designers do not need to know how to write java, they can modify existing games just by editing values \nin a json file. That allows game designers to quickly try out new things without relying on a game developer.\nThey can even make completly new games, just by combinding and configuring existing features.\n\n\nFor Map Builders\n\u00b6\n\n\nMap Builders will enojy how easy it is to setup maps for VGL. They can setup their maps right from the game, marking\nimportant locations (spawns, chests, drop points...) via skulls. VGL also allows you to easily iterate over the map, making\nchanges to the world or the markers very easy.\n\n\nFor Server Admins\n\u00b6\n\n\nServer Admins will like that VGL supports endless relational databases thanks to our choice of hibernate as our DB framework.\nThat means you can use whatever DB fits best into your enviroment. VGL also makes managing maps easy as they come in a (configurable) \ngit repo by default. \n\n\nFor Players\n\u00b6\n\n\nVGL will allow players to easily play their favorite minigames, with support for stuff like ELO based skill tracking and\nextensive stats tracking. They will also like that you have a seamless integration, every game UX is the same, making it\neasy to learn new modes.\n\n\nTo sum it up: we care about every user of this framework, from the game developers up to the end users, and aim to provide the \nbest experience possible for everyone.\n\n\nAbout this documentation\n\u00b6\n\n\nThis documentation is targeted at all kind of users of this framework.\n\nYou can find general information in the \nGeneral\n section.\n\nMap makers will find the \nMaps\n section useful.\n\nIf you want to build your own gamemode (either via the game definition files or via code) you might\nfind the list of components useful, you can find it \nhere\n.\n\nThat section also contains a \nlist of gamemodes\n other developers created.\n\nIf you are a developer and plan on writing your own features, phases or games you will find the \n\ndeveloper area\n useful.\n\nIf you want to help out the project in any way (no coding required!) you can take a look at the\n\ncontributor area\n to find out who you can help.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/#voxelgameslib-documentation",
+            "text": "",
+            "title": "VoxelGamesLib Documentation"
+        },
+        {
+            "location": "/#introduction",
+            "text": "Welcome to the VoxelGamesLib documentation.  VoxelGamesLib is a powerful, feature-packed, abstract and expandable Minecraft minigames framework. \nIt aims to make to easy for developers, admins and users to create, run and play minigames at scale.",
+            "title": "Introduction"
+        },
+        {
+            "location": "/#for-game-developers",
+            "text": "Game Developers will make use of the modular apis VGL offers to make creating minigames pain free and allow\nthem to focus on whats important: the gameplay. The structure of VGL allows developers to easily write many games\nwithout duplicating any code.",
+            "title": "For Game Developers"
+        },
+        {
+            "location": "/#for-game-designers",
+            "text": "Game Designers do not need to know how to write java, they can modify existing games just by editing values \nin a json file. That allows game designers to quickly try out new things without relying on a game developer.\nThey can even make completly new games, just by combinding and configuring existing features.",
+            "title": "For Game Designers"
+        },
+        {
+            "location": "/#for-map-builders",
+            "text": "Map Builders will enojy how easy it is to setup maps for VGL. They can setup their maps right from the game, marking\nimportant locations (spawns, chests, drop points...) via skulls. VGL also allows you to easily iterate over the map, making\nchanges to the world or the markers very easy.",
+            "title": "For Map Builders"
+        },
+        {
+            "location": "/#for-server-admins",
+            "text": "Server Admins will like that VGL supports endless relational databases thanks to our choice of hibernate as our DB framework.\nThat means you can use whatever DB fits best into your enviroment. VGL also makes managing maps easy as they come in a (configurable) \ngit repo by default.",
+            "title": "For Server Admins"
+        },
+        {
+            "location": "/#for-players",
+            "text": "VGL will allow players to easily play their favorite minigames, with support for stuff like ELO based skill tracking and\nextensive stats tracking. They will also like that you have a seamless integration, every game UX is the same, making it\neasy to learn new modes.  To sum it up: we care about every user of this framework, from the game developers up to the end users, and aim to provide the \nbest experience possible for everyone.",
+            "title": "For Players"
+        },
+        {
+            "location": "/#about-this-documentation",
+            "text": "This documentation is targeted at all kind of users of this framework. \nYou can find general information in the  General  section. \nMap makers will find the  Maps  section useful. \nIf you want to build your own gamemode (either via the game definition files or via code) you might\nfind the list of components useful, you can find it  here . \nThat section also contains a  list of gamemodes  other developers created. \nIf you are a developer and plan on writing your own features, phases or games you will find the  developer area  useful. \nIf you want to help out the project in any way (no coding required!) you can take a look at the contributor area  to find out who you can help.",
+            "title": "About this documentation"
+        },
+        {
+            "location": "/general/doctrine/",
+            "text": "The VGL Doctrine\n\u00b6\n\n\nCreating a minigame should be more about being focused with game logic and creating cool things,\nrather than focusing on rewriting tons of code and having to watch out for bugs all of the time.\n\n\nVGL takes away the crap associated with making a minigame and lets developers focus on creating\nsomething cool and focusing on game logic instead.\n\n\nWhat does this mean for you as a player? Developers can create new games faster, find bugs easier and \ngenerally are more motivated.\n\n\nWhat does this mean for you as a server admin? You can choose from a wide range of gamemodes without having to\ndeal with capability issues.\n\n\nVoxelGamesLib was made and is developed with certain fundamental ideas in mind.\nThis doctrine will help you better understand them. Keep these in mind as you write your own games extending VGL.\n\n\nModularity\n\u00b6\n\n\nThis might be the most important concept. If you click around a bit on this documentation you will spot \nthe components VGL is made of. Its our number one priority to make sure that every piece of code you write can be \nreused elsewhere. \n\n\nIdeology 2\n\u00b6\n\n\n...",
+            "title": "Doctrine"
+        },
+        {
+            "location": "/general/doctrine/#the-vgl-doctrine",
+            "text": "Creating a minigame should be more about being focused with game logic and creating cool things,\nrather than focusing on rewriting tons of code and having to watch out for bugs all of the time.  VGL takes away the crap associated with making a minigame and lets developers focus on creating\nsomething cool and focusing on game logic instead.  What does this mean for you as a player? Developers can create new games faster, find bugs easier and \ngenerally are more motivated.  What does this mean for you as a server admin? You can choose from a wide range of gamemodes without having to\ndeal with capability issues.  VoxelGamesLib was made and is developed with certain fundamental ideas in mind.\nThis doctrine will help you better understand them. Keep these in mind as you write your own games extending VGL.",
+            "title": "The VGL Doctrine"
+        },
+        {
+            "location": "/general/doctrine/#modularity",
+            "text": "This might be the most important concept. If you click around a bit on this documentation you will spot \nthe components VGL is made of. Its our number one priority to make sure that every piece of code you write can be \nreused elsewhere.",
+            "title": "Modularity"
+        },
+        {
+            "location": "/general/doctrine/#ideology-2",
+            "text": "...",
+            "title": "Ideology 2"
+        },
+        {
+            "location": "/general/getting-started/",
+            "text": "Getting Started\n\u00b6\n\n\nHopefully you've already read the doctrine to have a better understanding of the concepts and ideology behind VGL. The rest of the guide will assume you have an understanding of VGL concepts listed in the doctrine, such as a phase-oriented design.\n\n\nHere are some of the things that VGL does for you:\n\n\n\n\nFair, elo-based matchmaking\n\n\nRoles\n\n\nLocales\n\n\nPersistence\n\n\n\n\nVGL also contains many APIs to assist with development, for example:\n\n\n\n\nScoreboard API\n\n\nSign API\n\n\n\n\nThe next section will go on to talk about the key components that make up games in VGL:\n\n\n\n\nPhases\n\n\nFeatures",
+            "title": "Getting started"
+        },
+        {
+            "location": "/general/getting-started/#getting-started",
+            "text": "Hopefully you've already read the doctrine to have a better understanding of the concepts and ideology behind VGL. The rest of the guide will assume you have an understanding of VGL concepts listed in the doctrine, such as a phase-oriented design.  Here are some of the things that VGL does for you:   Fair, elo-based matchmaking  Roles  Locales  Persistence   VGL also contains many APIs to assist with development, for example:   Scoreboard API  Sign API   The next section will go on to talk about the key components that make up games in VGL:   Phases  Features",
+            "title": "Getting Started"
+        },
+        {
+            "location": "/general/terms/",
+            "text": "Terms\n\u00b6\n\n\nWhen dealing with VoxelGamesLib you will stumble upon a bunch of terms\nand abbreviations. This place aims to be a central page to explain those\n\n\n\n\nVGL\n\n\nAbbreviation for this project, VoxelGamesLib\n\n\n\n\n\n\nPhase\n\n\nA phase in a game is a timespan where certain gameplay parts (Features)\nare active. It can end after a special time or after a certain condition\n\n\n\n\n\n\nFeature\n\n\nFeature often refers to a certain small, modular set of logic that is\nused to build phases and games. A feature can be nearly everything, from\ndisabling PVP or blocking block break to complex spawn or team selection \nalgorithms.\n\n\n\n\n\n\nGamemode\n\n\na gamemode is what people can play. it contains multiple phases. \n\n\n\n\n\n\nPR\n\n\nPull request, used when somebody wants to make changes to any of the projects\nrepos.\n\n\n\n\n\n\nRepo\n\n\nRepository. Basically projects hosted on github.\n\n\n\n\n\n\nGame Developer\n\n\nSomeone who extends VGL by writing phases, features or games using the API VGL provides.\n\n\n\n\n\n\nGame Designer\n\n\nSomeone who uses game definitions to custimize games and remix entrily new games.\n\n\n\n\n\n\nMap Builder\n\n\nSomeone who builds maps and uses the world creator in VGL to add it into the system so that games can use them.\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nYou stumbled upon a term that is not listed here? Open a PR to add it or \nopen an issue so ppl can explain it to you (and add it here later)",
+            "title": "Terms"
+        },
+        {
+            "location": "/general/terms/#terms",
+            "text": "When dealing with VoxelGamesLib you will stumble upon a bunch of terms\nand abbreviations. This place aims to be a central page to explain those   VGL  Abbreviation for this project, VoxelGamesLib    Phase  A phase in a game is a timespan where certain gameplay parts (Features)\nare active. It can end after a special time or after a certain condition    Feature  Feature often refers to a certain small, modular set of logic that is\nused to build phases and games. A feature can be nearly everything, from\ndisabling PVP or blocking block break to complex spawn or team selection \nalgorithms.    Gamemode  a gamemode is what people can play. it contains multiple phases.     PR  Pull request, used when somebody wants to make changes to any of the projects\nrepos.    Repo  Repository. Basically projects hosted on github.    Game Developer  Someone who extends VGL by writing phases, features or games using the API VGL provides.    Game Designer  Someone who uses game definitions to custimize games and remix entrily new games.    Map Builder  Someone who builds maps and uses the world creator in VGL to add it into the system so that games can use them.      Tip  You stumbled upon a term that is not listed here? Open a PR to add it or \nopen an issue so ppl can explain it to you (and add it here later)",
+            "title": "Terms"
+        },
+        {
+            "location": "/maps/introduction/",
+            "text": "",
+            "title": "Introduction"
+        },
+        {
+            "location": "/maps/how-to-create-a-map/",
+            "text": "",
+            "title": "How to create a map"
+        },
+        {
+            "location": "/components/general/",
+            "text": "Components\n\u00b6\n\n\nThere are 3 types of components in VGL\n\n\n\n\n\n\nFeatures\n\n  Feature often refers to a certain small, modular set of logic that is\n  used to build phases and games. A feature can be nearly everything, from\n  disabling PVP or blocking block break to complex spawn or team selection \n  algorithms.\n\n  You can find a list of features \nhere\n\n\n\n\n\n\nPhases\n\n  A phase in a game is a timespan where certain gameplay parts (Features)\n  are active. It can end after a special time or after a certain condition.\n\n  You can find a list of phases \nhere\n\n\n\n\n\n\nGames\n\n  a game or gamemode is what people can play. it contains multiple phases.\n  You can find a list of gamemodes \nhere",
+            "title": "General"
+        },
+        {
+            "location": "/components/general/#components",
+            "text": "There are 3 types of components in VGL    Features \n  Feature often refers to a certain small, modular set of logic that is\n  used to build phases and games. A feature can be nearly everything, from\n  disabling PVP or blocking block break to complex spawn or team selection \n  algorithms. \n  You can find a list of features  here    Phases \n  A phase in a game is a timespan where certain gameplay parts (Features)\n  are active. It can end after a special time or after a certain condition. \n  You can find a list of phases  here    Games \n  a game or gamemode is what people can play. it contains multiple phases.\n  You can find a list of gamemodes  here",
+            "title": "Components"
+        },
+        {
+            "location": "/components/features/",
+            "text": "Features\n\u00b6\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all features are listed and its parameters explained.\nThis may also contain links and documentation for 3\nrd\n party features.",
+            "title": "Features"
+        },
+        {
+            "location": "/components/features/#features",
+            "text": "There is not much here yet, but in the future this will be the place\nwhere all features are listed and its parameters explained.\nThis may also contain links and documentation for 3 rd  party features.",
+            "title": "Features"
+        },
+        {
+            "location": "/components/phases/",
+            "text": "Phases\n\u00b6\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all phases are listed and its parameters explained.\nThis may also contain links and documentation for 3\nrd\n party phases.",
+            "title": "Phases"
+        },
+        {
+            "location": "/components/phases/#phases",
+            "text": "There is not much here yet, but in the future this will be the place\nwhere all phases are listed and its parameters explained.\nThis may also contain links and documentation for 3 rd  party phases.",
+            "title": "Phases"
+        },
+        {
+            "location": "/components/games/",
+            "text": "Games\n\u00b6\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all public games are listed and explained.",
+            "title": "Games"
+        },
+        {
+            "location": "/components/games/#games",
+            "text": "There is not much here yet, but in the future this will be the place\nwhere all public games are listed and explained.",
+            "title": "Games"
+        },
+        {
+            "location": "/developer-area/how-to-write-an-addon/",
+            "text": "How to write an addon\n\u00b6\n\n\nAn addon to VGL is just a normal bukkit plugin with some extra stuff.\n\nWe will be looking at the 1vs1 game as an example, you can find the full (and updated) code \nhere\n\nYour mainclass is pretty straight forward. You want to extend JavaPlugin as usual, but also implement Module (from VGL).\nYou also should mark the class @Singleton and add a @ModuleInfo\n\n1\n2\n3\n@Singleton\n\n\n@ModuleInfo\n(\nname\n \n=\n \n\"1vs1\"\n,\n \nauthors\n \n=\n \n\"MiniDigger\"\n,\n \nversion\n \n=\n \n\"1.0.0\"\n)\n\n\npublic\n \nclass\n \nOneVsOnePlugin\n \nextends\n \nJavaPlugin\n \nimplements\n \nModule\n\n\n\n\n\nThe most important thing is that you add a onLoad that looks like this:\n\n1\n2\n3\n4\n    \n@Override\n\n    \npublic\n \nvoid\n \nonLoad\n()\n \n{\n\n        \nModuleHandler\n.\nofferModule\n(\nthis\n);\n \n// always do this first!\n\n    \n}\n\n\n\n\n\nThis is the part where your addon hooks into VGL. you want to ignore bukkits onEnable and onDisable and use VGL's enable and disable instead.\nThis will make sure, that you don't do stuff before VGL has initialized your module properly.\n\nAfter the module has been initalized, you can easly access any part of VGL via guice injections.\n\nIf you are new to guice, check out this short introduction \nhere\n \n\n\nIf your addon offers a new gamemode, you also should register that in your main file.\n\nAdd a constant called GAMEMODE to hold a reference to your gamemode:\n\n1\npublic\n \nstatic\n \nfinal\n \nGameMode\n \nGAMEMODE\n \n=\n \nnew\n \nGameMode\n(\n\"1vs1\"\n,\n \nOneVsOneGame\n.\nclass\n);\n\n\n\n\n\nthen register that in your enable method:\n\n1\n2\n3\n4\n    \n@Override\n\n    \npublic\n \nvoid\n \nenable\n()\n \n{\n\n        \ngameHandler\n.\nregisterGameMode\n(\nGAMEMODE\n);\n\n    \n}\n\n\n\n\n\nNow your game is ready to be played by users!\n\nBe sure to checkout the other guides in the developer area to learn how to create phases, features and games!",
+            "title": "How to write an addon"
+        },
+        {
+            "location": "/developer-area/how-to-write-an-addon/#how-to-write-an-addon",
+            "text": "An addon to VGL is just a normal bukkit plugin with some extra stuff. \nWe will be looking at the 1vs1 game as an example, you can find the full (and updated) code  here \nYour mainclass is pretty straight forward. You want to extend JavaPlugin as usual, but also implement Module (from VGL).\nYou also should mark the class @Singleton and add a @ModuleInfo 1\n2\n3 @Singleton  @ModuleInfo ( name   =   \"1vs1\" ,   authors   =   \"MiniDigger\" ,   version   =   \"1.0.0\" )  public   class   OneVsOnePlugin   extends   JavaPlugin   implements   Module   \nThe most important thing is that you add a onLoad that looks like this: 1\n2\n3\n4      @Override \n     public   void   onLoad ()   { \n         ModuleHandler . offerModule ( this );   // always do this first! \n     }   \nThis is the part where your addon hooks into VGL. you want to ignore bukkits onEnable and onDisable and use VGL's enable and disable instead.\nThis will make sure, that you don't do stuff before VGL has initialized your module properly. \nAfter the module has been initalized, you can easly access any part of VGL via guice injections. \nIf you are new to guice, check out this short introduction  here    If your addon offers a new gamemode, you also should register that in your main file. \nAdd a constant called GAMEMODE to hold a reference to your gamemode: 1 public   static   final   GameMode   GAMEMODE   =   new   GameMode ( \"1vs1\" ,   OneVsOneGame . class );   \nthen register that in your enable method: 1\n2\n3\n4      @Override \n     public   void   enable ()   { \n         gameHandler . registerGameMode ( GAMEMODE ); \n     }   \nNow your game is ready to be played by users! \nBe sure to checkout the other guides in the developer area to learn how to create phases, features and games!",
+            "title": "How to write an addon"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/",
+            "text": "How to write a feature\n\u00b6\n\n\nFeatures are small parts of a game that gets added to a phase. Features are the modular core of VGL.\n\nYou should try to create as many features as possible so that game designers can easily remix them into new games.  \n\n\nA feature consits of multile parts:\n\n\n\n\nA @FeatureInfo annotation\n   \n\n\n@Expose'd variables\n   \n\n\nEvent Handlers\n  \n\n\nDependencies\n  \n\n\nstart/stop/tick methods\n    \n\n\n\n\nGeneral\n\u00b6\n\n\nA feature extends \nAbstractFeature\n.\n\nYou can access other features (make sure you read about \ndependencies\n first) by calling\n\nYourFeature feature = getPhase().getFeature(YourFeature.class);\n\nYou can find a list of existing features \nhere\n or you can look into \n\nthe features package\n \nVGL has.\n\n\n@FeatureInfo\n\u00b6\n\n\nThe feature info adds some metadata to features, that is used to generate documentation. its fairly straight \nforward. Take a look at this example: \n\n@FeatureInfo(name = \"NoBlockBreakFeature\", author = \"MiniDigger\", version = \"1.0\", description = \"Small feature that blocks block breaking if active\")\n\n\nExposed Variables\n\u00b6\n\n\nIts always a good idea to expose as many vars as possible. Exposed vars will end up in the game definitions, so that\ngame designers can easily adjust them if needed.\n\nYou have to be careful to what you expose, not every type can be easily serialized! (if you are missing a type, there is currently no way to add a custom type adapter, \ncreate an issue on github and we will look into that)\n\nLets look back at our NoBlockBreakFeature:\n\n1\n2\n3\n4\n@Expose\n\n\nprivate\n \nMaterial\n[]\n \nwhitelist\n \n=\n \nnew\n \nMaterial\n[\n0\n];\n\n\n@Expose\n\n\nprivate\n \nMaterial\n[]\n \nblacklist\n \n=\n \nnew\n \nMaterial\n[\n0\n];\n\n\n\n\n\nIt exposes a material black and whitelist. Its important to have a default value so that you don't end up dealing with nulls.\nVGL will make sure that if a game designer modified the values, those fields will be updated.\n\n\nEvent Handlers\n\u00b6\n\n\nThere are two types of event handlers in VGL: normal \n@EventHandler\ns and \n@GameEvent\ns. \nThe \n@EventHandler\n annotation works like in every other bukkit plugin, but you need to make sure that you only handle events, that are related \nto the game the feature runs in. You don't want the NoBlockBreakFeature of the SurvivalGames game affect the Bedwars game that is currently running too!\n\nThats where \n@GameEvent\n comes in. It tries to figure out if the event was caused by a player and only forward it to your method, if the player plays in the game the\nfeature is attached too. This doesn't work for every event, you might have to do some checks yourself (like check the world name or something like that).\n\nVGL will print a warning when it couldn't resolve a user.\nGenerally, \n@GameEvent\n works exactly as \n@EventHandler\n:\n\n1\n2\n3\n4\n@GameEvent\n\n\npublic\n \nvoid\n \nonBlockBreak\n(\nBlockBreakEvent\n \nevent\n)\n \n{\n\n\n// your event code\n\n\n}\n\n\n\n\n\nAnother cool feature \n@GameEvent\n provides is the ability to easily get a user object from non-vgl events.\n\nYou just add a second parameter of type \nUser\n to the method:\n\n\n1\n2\n3\n4\n@GameEvent\n\n\npublic\n \nvoid\n \nonBlockBreak\n(\nBlockBreakEvent\n \nevent\n,\n \nUser\n \nuser\n)\n \n{\n\n    \nlog\n.\ninfo\n(\nuser\n.\ngetRawDisplayName\n()\n \n+\n \n\" broke a block!\"\n);\n\n\n}\n\n\n\n\n\n\nDependencies\n\u00b6\n\n\nSome features require that other features are active. For example there is a Scoreboard feature, that provides scoreboards for all players.\n\nThe map info feature uses that scoreboard and displays some info about the current active map on it.\n\nThat mean, the map info feature depends on both the scoreboard feature and the map feature.\n\nTo implement that, you just have to override the getDependencies (or getSoftDependencies) method:\n\n1\n2\n3\n4\n@Override\n\n\npublic\n \nClass\n[]\n \ngetDependencies\n()\n \n{\n\n    \nreturn\n \nnew\n \nClass\n[]{\nMapFeature\n.\nclass\n,\n \nScoreboardFeature\n.\nclass\n};\n\n\n}\n\n\n\n\n\nVGL then will make sure that the features are present (expect for soft dependencies) and loaded before your feature.\n\nOnce you have that, you can easily access the feature like this:\n\n\n1\n2\n3\n4\nScoreboardFeature\n \nscoreboardFeature\n \n=\n \ngetPhase\n().\ngetFeature\n(\nScoreboardFeature\n.\nclass\n);\n\n\nScoreboard\n \nscoreboard\n \n=\n \nscoreboardFeature\n.\ngetScoreboard\n();\n\n\nscoreboard\n.\ncreateAndAddLine\n(\nChatColor\n.\nYELLOW\n \n+\n \n\"\"\n \n+\n \nChatColor\n.\nBOLD\n \n+\n \n\"Author: \"\n);\n\n\n.....\n\n\n\n\n\n\nStart/Stop/Tick methods\n\u00b6\n\n\nVGL also provides you with some additonal methods you can override: \n\n\n\n\nvoid start(): called when the phase this feature is attached to starts  \n\n\nvoid stop(): called when the phase this feature is attached to stops  \n\n\nvoid tick(): called when the phase this feature is attached to ticks (20 times each second)  \n\n\nvoid init(): called when the feature is added to phase",
+            "title": "How to write a feature"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#how-to-write-a-feature",
+            "text": "Features are small parts of a game that gets added to a phase. Features are the modular core of VGL. \nYou should try to create as many features as possible so that game designers can easily remix them into new games.    A feature consits of multile parts:   A @FeatureInfo annotation      @Expose'd variables      Event Handlers     Dependencies     start/stop/tick methods",
+            "title": "How to write a feature"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#general",
+            "text": "A feature extends  AbstractFeature . \nYou can access other features (make sure you read about  dependencies  first) by calling YourFeature feature = getPhase().getFeature(YourFeature.class); \nYou can find a list of existing features  here  or you can look into  the features package  \nVGL has.",
+            "title": "General"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#featureinfo",
+            "text": "The feature info adds some metadata to features, that is used to generate documentation. its fairly straight \nforward. Take a look at this example:  @FeatureInfo(name = \"NoBlockBreakFeature\", author = \"MiniDigger\", version = \"1.0\", description = \"Small feature that blocks block breaking if active\")",
+            "title": "@FeatureInfo"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#exposed-variables",
+            "text": "Its always a good idea to expose as many vars as possible. Exposed vars will end up in the game definitions, so that\ngame designers can easily adjust them if needed. \nYou have to be careful to what you expose, not every type can be easily serialized! (if you are missing a type, there is currently no way to add a custom type adapter, \ncreate an issue on github and we will look into that) \nLets look back at our NoBlockBreakFeature: 1\n2\n3\n4 @Expose  private   Material []   whitelist   =   new   Material [ 0 ];  @Expose  private   Material []   blacklist   =   new   Material [ 0 ];   \nIt exposes a material black and whitelist. Its important to have a default value so that you don't end up dealing with nulls.\nVGL will make sure that if a game designer modified the values, those fields will be updated.",
+            "title": "Exposed Variables"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#event-handlers",
+            "text": "There are two types of event handlers in VGL: normal  @EventHandler s and  @GameEvent s. \nThe  @EventHandler  annotation works like in every other bukkit plugin, but you need to make sure that you only handle events, that are related \nto the game the feature runs in. You don't want the NoBlockBreakFeature of the SurvivalGames game affect the Bedwars game that is currently running too! \nThats where  @GameEvent  comes in. It tries to figure out if the event was caused by a player and only forward it to your method, if the player plays in the game the\nfeature is attached too. This doesn't work for every event, you might have to do some checks yourself (like check the world name or something like that). \nVGL will print a warning when it couldn't resolve a user.\nGenerally,  @GameEvent  works exactly as  @EventHandler : 1\n2\n3\n4 @GameEvent  public   void   onBlockBreak ( BlockBreakEvent   event )   {  // your event code  }   \nAnother cool feature  @GameEvent  provides is the ability to easily get a user object from non-vgl events. \nYou just add a second parameter of type  User  to the method:  1\n2\n3\n4 @GameEvent  public   void   onBlockBreak ( BlockBreakEvent   event ,   User   user )   { \n     log . info ( user . getRawDisplayName ()   +   \" broke a block!\" );  }",
+            "title": "Event Handlers"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#dependencies",
+            "text": "Some features require that other features are active. For example there is a Scoreboard feature, that provides scoreboards for all players. \nThe map info feature uses that scoreboard and displays some info about the current active map on it. \nThat mean, the map info feature depends on both the scoreboard feature and the map feature. \nTo implement that, you just have to override the getDependencies (or getSoftDependencies) method: 1\n2\n3\n4 @Override  public   Class []   getDependencies ()   { \n     return   new   Class []{ MapFeature . class ,   ScoreboardFeature . class };  }   \nVGL then will make sure that the features are present (expect for soft dependencies) and loaded before your feature. \nOnce you have that, you can easily access the feature like this:  1\n2\n3\n4 ScoreboardFeature   scoreboardFeature   =   getPhase (). getFeature ( ScoreboardFeature . class );  Scoreboard   scoreboard   =   scoreboardFeature . getScoreboard ();  scoreboard . createAndAddLine ( ChatColor . YELLOW   +   \"\"   +   ChatColor . BOLD   +   \"Author: \" );  .....",
+            "title": "Dependencies"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-feature/#startstoptick-methods",
+            "text": "VGL also provides you with some additonal methods you can override:    void start(): called when the phase this feature is attached to starts    void stop(): called when the phase this feature is attached to stops    void tick(): called when the phase this feature is attached to ticks (20 times each second)    void init(): called when the feature is added to phase",
+            "title": "Start/Stop/Tick methods"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-phase/",
+            "text": "How to write a phase\n\u00b6\n\n\nA phase is a time period in which certain features are active. \nWriting a phase is pretty straight forward. VGL offers two base phase types: AbstractPhase and TimedPhase. \nTimed phases end after a spefified amount of time, abstract phases need to be ended by a feature. \nThis doesn't mean that features can't end timed phases.\n\nLets take a look at the OneVsOnePhase:\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30\npublic\n \nclass\n \nOneVsOnePhase\n \nextends\n \nTimedPhase\n \n{\n\n\n    \n@Override\n\n    \npublic\n \nvoid\n \ninit\n()\n \n{\n\n        \nsetName\n(\n\"OneVsOnePhase\"\n);\n\n        \nsetTicks\n(\n2\n \n*\n \n60\n \n*\n \nGameConstants\n.\nTPS\n);\n\n        \nsuper\n.\ninit\n();\n\n        \nsetAllowJoin\n(\nfalse\n);\n\n        \nsetAllowSpectate\n(\ntrue\n);\n\n\n        \nMapFeature\n \nmapFeature\n \n=\n \ngetGame\n().\ncreateFeature\n(\nMapFeature\n.\nclass\n,\n \nthis\n);\n\n        \nmapFeature\n.\nsetShouldUnload\n(\ntrue\n);\n\n        \naddFeature\n(\nmapFeature\n);\n\n\n        \nSpawnFeature\n \nspawnFeature\n \n=\n \ngetGame\n().\ncreateFeature\n(\nSpawnFeature\n.\nclass\n,\n \nthis\n);\n\n        \nspawnFeature\n.\nsetRespawn\n(\nfalse\n);\n\n        \nspawnFeature\n.\nsetInitialSpawn\n(\nfalse\n);\n\n        \naddFeature\n(\nspawnFeature\n);\n\n\n        \nGameModeFeature\n \ngameModeFeature\n \n=\n \ngetGame\n().\ncreateFeature\n(\nGameModeFeature\n.\nclass\n,\n \nthis\n);\n\n        \ngameModeFeature\n.\nsetGameMode\n(\nGameMode\n.\nSURVIVAL\n);\n\n        \naddFeature\n(\ngameModeFeature\n);\n\n\n        \nOneVsOneFeature\n \noneVsOneFeature\n \n=\n \ngetGame\n().\ncreateFeature\n(\nOneVsOneFeature\n.\nclass\n,\n \nthis\n);\n\n        \naddFeature\n(\noneVsOneFeature\n);\n\n\n        \nDuelFeature\n \nduelFeature\n \n=\n \ngetGame\n().\ncreateFeature\n(\nDuelFeature\n.\nclass\n,\n \nthis\n);\n\n        \naddFeature\n(\nduelFeature\n);\n\n    \n}\n\n\n}\n\n\n\n\n\nLooks pretty easy, right? \nLets break it down:\nthe phase extends \nTimedPhase\n, so it will end after a speficied amount of time (ticks).\n\nWe see a init method. that method is called when the phase is added to the game. generally, thats the only \nmethod you need, all game logic should be part of the features.\nAt the top of the init method, we set the name and the time, call the super (IMPORTANT!) and configure if players\ncan join or spectate. \nBelow that, we add a bunch of features. You want to create a feature via the \ncreatFeature\n method \nGame\n offers,\nset some options and then add the feature to the phase. \nCheckout \nHow to write a Feature\n to learn more about features.",
+            "title": "How to write a phase"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-phase/#how-to-write-a-phase",
+            "text": "A phase is a time period in which certain features are active. \nWriting a phase is pretty straight forward. VGL offers two base phase types: AbstractPhase and TimedPhase. \nTimed phases end after a spefified amount of time, abstract phases need to be ended by a feature. \nThis doesn't mean that features can't end timed phases. \nLets take a look at the OneVsOnePhase:  1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n25\n26\n27\n28\n29\n30 public   class   OneVsOnePhase   extends   TimedPhase   { \n\n     @Override \n     public   void   init ()   { \n         setName ( \"OneVsOnePhase\" ); \n         setTicks ( 2   *   60   *   GameConstants . TPS ); \n         super . init (); \n         setAllowJoin ( false ); \n         setAllowSpectate ( true ); \n\n         MapFeature   mapFeature   =   getGame (). createFeature ( MapFeature . class ,   this ); \n         mapFeature . setShouldUnload ( true ); \n         addFeature ( mapFeature ); \n\n         SpawnFeature   spawnFeature   =   getGame (). createFeature ( SpawnFeature . class ,   this ); \n         spawnFeature . setRespawn ( false ); \n         spawnFeature . setInitialSpawn ( false ); \n         addFeature ( spawnFeature ); \n\n         GameModeFeature   gameModeFeature   =   getGame (). createFeature ( GameModeFeature . class ,   this ); \n         gameModeFeature . setGameMode ( GameMode . SURVIVAL ); \n         addFeature ( gameModeFeature ); \n\n         OneVsOneFeature   oneVsOneFeature   =   getGame (). createFeature ( OneVsOneFeature . class ,   this ); \n         addFeature ( oneVsOneFeature ); \n\n         DuelFeature   duelFeature   =   getGame (). createFeature ( DuelFeature . class ,   this ); \n         addFeature ( duelFeature ); \n     }  }   \nLooks pretty easy, right? \nLets break it down:\nthe phase extends  TimedPhase , so it will end after a speficied amount of time (ticks). \nWe see a init method. that method is called when the phase is added to the game. generally, thats the only \nmethod you need, all game logic should be part of the features.\nAt the top of the init method, we set the name and the time, call the super (IMPORTANT!) and configure if players\ncan join or spectate. \nBelow that, we add a bunch of features. You want to create a feature via the  creatFeature  method  Game  offers,\nset some options and then add the feature to the phase. \nCheckout  How to write a Feature  to learn more about features.",
+            "title": "How to write a phase"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-game/",
+            "text": "How to write a game\n\u00b6\n\n\nA Game is made up from multiple parts. First you want to make sure you have some phases and features you want to use.\nBe sure to check out the other tutorials for that. \nThen you can create a game class. It shoudl extend \nAbstractGame\n and have a \n@GameInfo\n annotation:\n\n1\n2\n@GameInfo\n(\nname\n \n=\n \n\"1vs1\"\n,\n \nauthor\n \n=\n \n\"MiniDigger\"\n,\n \nversion\n \n=\n \n\"v1.0\"\n,\n \ndescription\n \n=\n \n\"1vs1 Description\"\n)\n\n\npublic\n \nclass\n \nOneVsOneGame\n \nextends\n \nAbstractGame\n\n\n\n\n\nThen you need to have a constructor. You want to give the super constructor the gamemode constant you made in your addon class\n(If you didn't do that, go back to that step \nhere\n).\n\nYour constructor should look like this:\n\n1\n2\n3\n    \npublic\n \nOneVsOneGame\n()\n \n{\n\n        \nsuper\n(\nOneVsOnePlugin\n.\nGAMEMODE\n);\n\n    \n}\n\n\n\n\n\nThen you have two methods: \ninitGameFromModule\n and \ninitGameFromDefinition.\n \nYour games will be serialized into a game definition by default, so that game designers can edit it easily.\n\nThat mean, that you only want to create phases and features in the \ninitGameFromModule\n method.\nYour initGameFromDefinition method should just be this:\n\n1\n2\n3\n4\n5\n6\n    \n@Override\n\n    \npublic\n \nvoid\n \ninitGameFromDefinition\n(\n@Nonnull\n \nGameDefinition\n \ngameDefinition\n)\n \n{\n\n        \nsuper\n.\ninitGameFromDefinition\n(\ngameDefinition\n);\n\n\n        \nloadMap\n();\n\n    \n}\n\n\n\n\n\n\nloadMap\n will make sure that the lobby map is loaded.\n\nYou define all your phases in the \ninitGameFromModule\n method:\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n    \n@Override\n\n    \npublic\n \nvoid\n \ninitGameFromModule\n()\n \n{\n\n        \nsetMinPlayers\n(\n2\n);\n\n        \nsetMaxPlayers\n(\n2\n);\n\n\n        \nLobbyWithVotePhase\n \nlobbyWithVotePhase\n \n=\n \ncreatePhase\n(\nLobbyWithVotePhase\n.\nclass\n);\n\n        \nGracePhase\n \ngracePhase\n \n=\n \ncreatePhase\n(\nGracePhase\n.\nclass\n);\n\n        \nOneVsOnePhase\n \nsurvivalGamesPhase\n \n=\n \ncreatePhase\n(\nOneVsOnePhase\n.\nclass\n);\n\n\n        \nlobbyWithVotePhase\n.\nsetNextPhase\n(\ngracePhase\n);\n\n        \ngracePhase\n.\nsetNextPhase\n(\nsurvivalGamesPhase\n);\n\n\n        \nactivePhase\n \n=\n \nlobbyWithVotePhase\n;\n\n\n        \nloadMap\n();\n\n    \n}\n\n\n\n\n\nAs you can see, there are multiple steps:\nFirst, you spefify the min and maxmium amount of players required to play this game.\n\nThen you create all your phases.\n\nAfter that, you make sure the order of phases is right.\n\nIn the end, you specify the first active phase and load the lobby map.\nAnd thats all! Now you can just start a game ingame via \n/game start <gamemode>\n!",
+            "title": "How to write a game"
+        },
+        {
+            "location": "/developer-area/how-to-write-a-game/#how-to-write-a-game",
+            "text": "A Game is made up from multiple parts. First you want to make sure you have some phases and features you want to use.\nBe sure to check out the other tutorials for that. \nThen you can create a game class. It shoudl extend  AbstractGame  and have a  @GameInfo  annotation: 1\n2 @GameInfo ( name   =   \"1vs1\" ,   author   =   \"MiniDigger\" ,   version   =   \"v1.0\" ,   description   =   \"1vs1 Description\" )  public   class   OneVsOneGame   extends   AbstractGame   \nThen you need to have a constructor. You want to give the super constructor the gamemode constant you made in your addon class\n(If you didn't do that, go back to that step  here ). \nYour constructor should look like this: 1\n2\n3      public   OneVsOneGame ()   { \n         super ( OneVsOnePlugin . GAMEMODE ); \n     }   \nThen you have two methods:  initGameFromModule  and  initGameFromDefinition.  \nYour games will be serialized into a game definition by default, so that game designers can edit it easily. \nThat mean, that you only want to create phases and features in the  initGameFromModule  method.\nYour initGameFromDefinition method should just be this: 1\n2\n3\n4\n5\n6      @Override \n     public   void   initGameFromDefinition ( @Nonnull   GameDefinition   gameDefinition )   { \n         super . initGameFromDefinition ( gameDefinition ); \n\n         loadMap (); \n     }    loadMap  will make sure that the lobby map is loaded. \nYou define all your phases in the  initGameFromModule  method:  1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16      @Override \n     public   void   initGameFromModule ()   { \n         setMinPlayers ( 2 ); \n         setMaxPlayers ( 2 ); \n\n         LobbyWithVotePhase   lobbyWithVotePhase   =   createPhase ( LobbyWithVotePhase . class ); \n         GracePhase   gracePhase   =   createPhase ( GracePhase . class ); \n         OneVsOnePhase   survivalGamesPhase   =   createPhase ( OneVsOnePhase . class ); \n\n         lobbyWithVotePhase . setNextPhase ( gracePhase ); \n         gracePhase . setNextPhase ( survivalGamesPhase ); \n\n         activePhase   =   lobbyWithVotePhase ; \n\n         loadMap (); \n     }   \nAs you can see, there are multiple steps:\nFirst, you spefify the min and maxmium amount of players required to play this game. \nThen you create all your phases. \nAfter that, you make sure the order of phases is right. \nIn the end, you specify the first active phase and load the lobby map.\nAnd thats all! Now you can just start a game ingame via  /game start <gamemode> !",
+            "title": "How to write a game"
+        },
+        {
+            "location": "/developer-area/introduction-to-guice/",
+            "text": "Introduction to guice\n\u00b6\n\n\nVGL heavily uses guice. This short page aims to give you a small overview of what you can do with guice.\nFor more details we suggest you to read googles excelent wiki \nhttps://github.com/google/guice/wiki\n\n\nBasic injections\n\u00b6\n\n\nGuice is an dependency injection framework. That means, you can get a reference to any class handled by guice\nvia a simple \n@Inject\n annotation on a field.\n\nFor example, you might want to start a bukkit scheduler in your OneVsOne game.\nAll you have to do is this:\n\n1\n2\n3\n4\n5\n6\n// some field\n\n\n@Inject\n\n\nprivate\n \nOneVsOnePlugin\n \nplugin\n;\n\n\n\n// some method\n\n\nBukkit\n.\ngetScheduler\n().\nrunTask\n(\nplugin\n,\n \ntask\n);\n\n\n\n\n\nGuice will take care of getting the right instance of OneVsOnePlugin.  \n\n\nTo make this all work, you have to add an annotation to the classes you only ever want one instance of.\n\nFor example, you never want more then 1 instance of your plugin class, since else bukkit would complain.\n\nTo tell guice that, you need to add a \n@Singleton\n annotation to the class. \n\n\nGenerally you can inject almost every class. Want to do something with users? \n@Inject UserHandler userHandler;\n.\nNeed to get the games of a player? \n@Inject GameHandler gameHandler\n. \n\n\nNamed injections\n\u00b6\n\n\nGuice also has the option to have multiple instances of the same type. To specify which instance you want, you use the\n\n@Named(\"name\")\n annotation.\n\nVGL defined a set of named annotations, you can see them here:\n\n\nhttps://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/src/main/java/me/minidigger/voxelgameslib/VoxelGamesLibModule.java#L58-L72\n\nFor example, the \nKitHandler\n gets a reference to the kits folder like this:\n\n1\n2\n3\n    \n@Inject\n\n    \n@Named\n(\n\"KitsFolder\"\n)\n\n    \nprivate\n \nFile\n \nkitsDir\n;\n\n\n\n\n\n\nInject Gson\n\u00b6\n\n\nVGL also setup guice to provide two guice instances. Those are equiped with the custom type adapters for stuff like phases for features.\n\nThere is the normal \n@Inject Gson gson\n which will be injected with a json instance that has pretty prinitng and excludes every field that isn't \nmarked with \n@Exposed\n. The other one will include all fields, you can get it with \n\n1\n2\n3\n@Inject\n\n\n@Named\n(\n\"IgnoreExposedBS\"\n)\n\n\nprivate\n \nGson\n \ngson\n;\n\n\n\n\n\nThis instance has pretty prining enabled too. Need one without pretty printing? let us know!\n\n\nCustom guice settings\n\u00b6\n\n\nthis is currently not implemented. If you need this, be sure to bump \nhttps://github.com/VoxelGamesLib/VoxelGamesLibv2/issues/71\n to let us know!",
+            "title": "Introduction to Guice"
+        },
+        {
+            "location": "/developer-area/introduction-to-guice/#introduction-to-guice",
+            "text": "VGL heavily uses guice. This short page aims to give you a small overview of what you can do with guice.\nFor more details we suggest you to read googles excelent wiki  https://github.com/google/guice/wiki",
+            "title": "Introduction to guice"
+        },
+        {
+            "location": "/developer-area/introduction-to-guice/#basic-injections",
+            "text": "Guice is an dependency injection framework. That means, you can get a reference to any class handled by guice\nvia a simple  @Inject  annotation on a field. \nFor example, you might want to start a bukkit scheduler in your OneVsOne game.\nAll you have to do is this: 1\n2\n3\n4\n5\n6 // some field  @Inject  private   OneVsOnePlugin   plugin ;  // some method  Bukkit . getScheduler (). runTask ( plugin ,   task );   \nGuice will take care of getting the right instance of OneVsOnePlugin.    To make this all work, you have to add an annotation to the classes you only ever want one instance of. \nFor example, you never want more then 1 instance of your plugin class, since else bukkit would complain. \nTo tell guice that, you need to add a  @Singleton  annotation to the class.   Generally you can inject almost every class. Want to do something with users?  @Inject UserHandler userHandler; .\nNeed to get the games of a player?  @Inject GameHandler gameHandler .",
+            "title": "Basic injections"
+        },
+        {
+            "location": "/developer-area/introduction-to-guice/#named-injections",
+            "text": "Guice also has the option to have multiple instances of the same type. To specify which instance you want, you use the @Named(\"name\")  annotation. \nVGL defined a set of named annotations, you can see them here:  https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/src/main/java/me/minidigger/voxelgameslib/VoxelGamesLibModule.java#L58-L72 \nFor example, the  KitHandler  gets a reference to the kits folder like this: 1\n2\n3      @Inject \n     @Named ( \"KitsFolder\" ) \n     private   File   kitsDir ;",
+            "title": "Named injections"
+        },
+        {
+            "location": "/developer-area/introduction-to-guice/#inject-gson",
+            "text": "VGL also setup guice to provide two guice instances. Those are equiped with the custom type adapters for stuff like phases for features. \nThere is the normal  @Inject Gson gson  which will be injected with a json instance that has pretty prinitng and excludes every field that isn't \nmarked with  @Exposed . The other one will include all fields, you can get it with  1\n2\n3 @Inject  @Named ( \"IgnoreExposedBS\" )  private   Gson   gson ;   \nThis instance has pretty prining enabled too. Need one without pretty printing? let us know!",
+            "title": "Inject Gson"
+        },
+        {
+            "location": "/developer-area/introduction-to-guice/#custom-guice-settings",
+            "text": "this is currently not implemented. If you need this, be sure to bump  https://github.com/VoxelGamesLib/VoxelGamesLibv2/issues/71  to let us know!",
+            "title": "Custom guice settings"
+        },
+        {
+            "location": "/developer-area/apis/scoreboard/",
+            "text": "",
+            "title": "Scoreboard API"
+        },
+        {
+            "location": "/developer-area/apis/kit/",
+            "text": "",
+            "title": "Kit API"
+        },
+        {
+            "location": "/developer-area/apis/sign/",
+            "text": "",
+            "title": "Sign API"
+        },
+        {
+            "location": "/developer-area/apis/elo/",
+            "text": "",
+            "title": "Elo API"
+        },
+        {
+            "location": "/developer-area/apis/command/",
+            "text": "Command API\n\u00b6\n\n\nVGL does not longer uses a custom command api, it uses \nACF by aikar\n\n\nFeatures can provide commands by implementing \nFeatureCommandImplementor\n (I hate that name as much as you do) \nand defining them in an inner class that extends \nAbstractFeatureCommand\n:\n\n\n 1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24\n    \npublic\n \nclass\n \nVoteFeature\n \nextends\n \nAbstractFeature\n \nimplements\n \nFeatureCommandImplementor\n{\n\n\n    \n.....\n\n\n    \n@Override\n\n    \npublic\n \nAbstractFeatureCommand\n \ngetCommandClass\n()\n \n{\n\n        \nreturn\n \nnew\n \nVoteFeatureCommand\n();\n\n    \n}\n\n\n    \n@Singleton\n\n    \nclass\n \nVoteFeatureCommand\n \nextends\n \nAbstractFeatureCommand\n \n{\n\n\n        \n@CommandAlias\n(\n\"vote\"\n)\n\n        \n@CommandPermission\n(\n\"%user\"\n)\n\n        \n@Syntax\n(\n\"[map] - the map to vote for\"\n)\n\n        \npublic\n \nvoid\n \nvote\n(\nUser\n \nsender\n,\n \n@Optional\n \nInteger\n \nmap\n)\n \n{\n\n            \nif\n \n(\nmap\n \n==\n \nnull\n)\n \n{\n\n                \nsendVoteMessage\n(\nsender\n);\n\n            \n}\n \nelse\n \n{\n\n                \nconfirmVote\n(\nsender\n,\n \nmap\n);\n\n            \n}\n\n        \n}\n\n    \n}\n\n\n}\n\n\n\n\n\n\n\nOther classes can register commands by injecting a \nBukkitCommandManager\n via and registering the command using that.\n\n\nFor a general documentation on how to write command with ACF, please see the \nACF wiki",
+            "title": "Command API"
+        },
+        {
+            "location": "/developer-area/apis/command/#command-api",
+            "text": "VGL does not longer uses a custom command api, it uses  ACF by aikar  Features can provide commands by implementing  FeatureCommandImplementor  (I hate that name as much as you do) \nand defining them in an inner class that extends  AbstractFeatureCommand :   1\n 2\n 3\n 4\n 5\n 6\n 7\n 8\n 9\n10\n11\n12\n13\n14\n15\n16\n17\n18\n19\n20\n21\n22\n23\n24      public   class   VoteFeature   extends   AbstractFeature   implements   FeatureCommandImplementor { \n\n     ..... \n\n     @Override \n     public   AbstractFeatureCommand   getCommandClass ()   { \n         return   new   VoteFeatureCommand (); \n     } \n\n     @Singleton \n     class   VoteFeatureCommand   extends   AbstractFeatureCommand   { \n\n         @CommandAlias ( \"vote\" ) \n         @CommandPermission ( \"%user\" ) \n         @Syntax ( \"[map] - the map to vote for\" ) \n         public   void   vote ( User   sender ,   @Optional   Integer   map )   { \n             if   ( map   ==   null )   { \n                 sendVoteMessage ( sender ); \n             }   else   { \n                 confirmVote ( sender ,   map ); \n             } \n         } \n     }  }    Other classes can register commands by injecting a  BukkitCommandManager  via and registering the command using that.  For a general documentation on how to write command with ACF, please see the  ACF wiki",
+            "title": "Command API"
+        },
+        {
+            "location": "/developer-area/apis/ability/",
+            "text": "",
+            "title": "Ability API"
+        },
+        {
+            "location": "/contributor-area/general/",
+            "text": "Contributing to VoxelGamesLib\n\u00b6\n\n\nHey there!\n\nThank for considering to contribute to VGL! Together we can make this thing even more\nawesome.\n\nThis area aims to be the central point for contributors and ppl who want to become one.\n\n\nThere are many ways you can contribute:  \n\n\n\n\nCreate Bugs Reports or Feature Requests\n\n  Found an issue? Wants something added? Help making VGL better with your ideas!\n\n  Learn more \nhere\n  \n\n\nContribute Translations\n\n  You are a walking dictionary or just generally good at languages? Consider helping\n  to translate this project so even more people can use it!  \n\n  Learn more \nhere\n  \n\n\nContribute Maps\n\n  Build a cool map you want to share with others so that more players can enjoy it?\n  Then this is for you!\n\n  Learn more \nhere\n  \n\n\nContribute Code\n\n  You want to help us out with your coding skills? Found out what you can do in this section!\n\n  Learn more \nhere\n  \n\n\n\n\nThis section also hosts the \ncontributors corner\n where news and other\nstuff that is relevant for contributors is posted.\n\n\nAnd our \"Hall of Fame\" of contributors is located in the other corner \nhere",
+            "title": "General"
+        },
+        {
+            "location": "/contributor-area/general/#contributing-to-voxelgameslib",
+            "text": "Hey there! \nThank for considering to contribute to VGL! Together we can make this thing even more\nawesome. \nThis area aims to be the central point for contributors and ppl who want to become one.  There are many ways you can contribute:     Create Bugs Reports or Feature Requests \n  Found an issue? Wants something added? Help making VGL better with your ideas! \n  Learn more  here     Contribute Translations \n  You are a walking dictionary or just generally good at languages? Consider helping\n  to translate this project so even more people can use it!   \n  Learn more  here     Contribute Maps \n  Build a cool map you want to share with others so that more players can enjoy it?\n  Then this is for you! \n  Learn more  here     Contribute Code \n  You want to help us out with your coding skills? Found out what you can do in this section! \n  Learn more  here      This section also hosts the  contributors corner  where news and other\nstuff that is relevant for contributors is posted.  And our \"Hall of Fame\" of contributors is located in the other corner  here",
+            "title": "Contributing to VoxelGamesLib"
+        },
+        {
+            "location": "/contributor-area/contributors/",
+            "text": "Contributors\n\u00b6\n\n\nVoxelGamesLib was made possible by many community members.\n\nYou can view the full list for the projects on github,\nsee the main project here as an example:\n\nhttps://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors\n\n\nThis page lists the major contributors and their role in the project.\n\n\n\n\nMiniDigger (\nadmin@minidigger.me\n)  \n\n\nRole: Founder and Maintainer  \n\n\nNotable contributions: General api design  \n\n\n\n\n\n\nLordRobust (aphelion)  \n\n\nRole: Maintainer, Addon Developer  \n\n\nNotable contributions: Chat System, API feedback, first addon  \n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFeeling like you made a major contribution? \nFeel free to open a pr and add yourself here!",
+            "title": "Contributors"
+        },
+        {
+            "location": "/contributor-area/contributors/#contributors",
+            "text": "VoxelGamesLib was made possible by many community members. \nYou can view the full list for the projects on github,\nsee the main project here as an example: https://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors  This page lists the major contributors and their role in the project.   MiniDigger ( admin@minidigger.me )    Role: Founder and Maintainer    Notable contributions: General api design      LordRobust (aphelion)    Role: Maintainer, Addon Developer    Notable contributions: Chat System, API feedback, first addon        Tip  Feeling like you made a major contribution? \nFeel free to open a pr and add yourself here!",
+            "title": "Contributors"
+        },
+        {
+            "location": "/contributor-area/contribute-code/",
+            "text": "Contributing code\n\u00b6\n\n\nThis is probably the hardest way to contribute since you need to pass\na proper review and test of all your changes.\n\nBut as scary as this might look at first, it's really not. This document\naims to guide you through the process of opening a PR and make the process\nas easy as possible for everyone.\n\n\nIf you just spot this page, thats very unluck since it has no actual content\nyet.",
+            "title": "Contribute Code"
+        },
+        {
+            "location": "/contributor-area/contribute-code/#contributing-code",
+            "text": "This is probably the hardest way to contribute since you need to pass\na proper review and test of all your changes. \nBut as scary as this might look at first, it's really not. This document\naims to guide you through the process of opening a PR and make the process\nas easy as possible for everyone.  If you just spot this page, thats very unluck since it has no actual content\nyet.",
+            "title": "Contributing code"
+        },
+        {
+            "location": "/contributor-area/contribute-maps/",
+            "text": "Contribute Maps\n\u00b6\n\n\nVGL has a public maps repository so that you can start your server without\nneeding to look for good maps first.\n\nYou can find the repo here \nhttps://github.com/VoxelGamesLib/maps\n\n\nIf you want to submit your map to that repository, just open a PR and fill\nout the information in the template (name, author, screenshot etc)",
+            "title": "Contribute Maps"
+        },
+        {
+            "location": "/contributor-area/contribute-maps/#contribute-maps",
+            "text": "VGL has a public maps repository so that you can start your server without\nneeding to look for good maps first. \nYou can find the repo here  https://github.com/VoxelGamesLib/maps  If you want to submit your map to that repository, just open a PR and fill\nout the information in the template (name, author, screenshot etc)",
+            "title": "Contribute Maps"
+        },
+        {
+            "location": "/contributor-area/contribute-translations/",
+            "text": "Contribute translations\n\u00b6\n\n\nThis page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.",
+            "title": "Contribute Translations"
+        },
+        {
+            "location": "/contributor-area/contribute-translations/#contribute-translations",
+            "text": "This page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.",
+            "title": "Contribute translations"
+        },
+        {
+            "location": "/contributor-area/create-bug-reports-or-feature-requests/",
+            "text": "",
+            "title": "Create bug reports or feature requests"
+        },
+        {
+            "location": "/contributor-area/contributors-corner/",
+            "text": "Contributors Corner\n\u00b6\n\n\nThis page lists useful information for maintainers or other team members.\n\n\nIts currently empty.",
+            "title": "Contributor's Corner"
+        },
+        {
+            "location": "/contributor-area/contributors-corner/#contributors-corner",
+            "text": "This page lists useful information for maintainers or other team members.  Its currently empty.",
+            "title": "Contributors Corner"
+        },
+        {
+            "location": "/test/testpage/",
+            "text": "test page\n\u00b6\n\n\nthis is a test page to test the capabilities of the used doc software and its extensions\n\n\n\n\nNote\n\n\ntest 1234\n\n\n\n\n\n\nQuote\n\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.\n\n\n\n\n1\n2\n3\npublic\n \nstatic\n \nvoid\n \nmain\n(\nString\n[]\n \nargs\n){\n\n\n    \nSystem\n.\nout\n.\nprintln\n(\n\"TEST!\"\n);\n\n\n}\n\n\n\n\n\n\n\n\"I suck at english\"\n1\n\n\n is on \n \nMan, these emoji are nice\n\n\n\n\n\n\n\n\n\n\nsome random footnote\u00a0\n\u21a9",
+            "title": "Test"
+        },
+        {
+            "location": "/test/testpage/#test-page",
+            "text": "this is a test page to test the capabilities of the used doc software and its extensions   Note  test 1234    Quote  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla et euismod\nnulla. Curabitur feugiat, tortor non consequat finibus, justo purus auctor\nmassa, nec semper lorem quam in massa.   1\n2\n3 public   static   void   main ( String []   args ){       System . out . println ( \"TEST!\" );  }    \"I suck at english\" 1   is on    Man, these emoji are nice      some random footnote\u00a0 \u21a9",
+            "title": "test page"
+        }
+    ]
+}
