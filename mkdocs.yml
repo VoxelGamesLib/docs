@@ -25,7 +25,8 @@ pages:
 - Mapper Area:
   - Introduction: maps/introduction.md
   - How to create a map: maps/how-to-create-a-map.md
-- Designer Area: designer-area/index.md
+- Designer Area:
+  - Index: designer-area/index.md
 - Developer Area:
   - How to write an addon: developer-area/how-to-write-an-addon.md
   - How to write a feature: developer-area/how-to-write-a-feature.md
