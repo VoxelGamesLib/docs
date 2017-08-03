@@ -32,7 +32,9 @@ Players make the game. VGL will allow players to easily play their favorite mini
 *To sum it up: we care about every user of this framework, from the game developers up to the end users, and aim to provide the 
 best experience possible for everyone.*
 
-## Useful Links
+## Next Steps
+
+If you just want to skip to a certain part of the docs appropriate to your role, these links may help.
 
 **General:**
 
