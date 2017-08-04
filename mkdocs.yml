@@ -32,6 +32,7 @@ pages:
   - How to write a feature: developer-area/how-to-write-a-feature.md
   - How to write a phase: developer-area/how-to-write-a-phase.md
   - How to write a game: developer-area/how-to-write-a-game.md
+  - How to use the i18n API: developer-area/how-to-use-the-i18n-api.md
   - Introduction to Guice: developer-area/introduction-to-guice.md
   - APIs: 
     - Scoreboard API: developer-area/apis/scoreboard.md
