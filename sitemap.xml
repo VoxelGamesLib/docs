@@ -112,6 +112,12 @@
     </url>
         
     <url>
+     <loc>/developer-area/how-to-use-the-i18n-api/</loc>
+     <lastmod>2017-08-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/developer-area/introduction-to-guice/</loc>
      <lastmod>2017-08-04</lastmod>
      <changefreq>daily</changefreq>
