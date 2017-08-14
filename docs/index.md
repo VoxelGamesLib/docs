@@ -47,7 +47,7 @@ If you just want to skip to a certain part of the docs appropriate to your role,
 
 **Game developers:**
 
-* [Developer area](/developer-area/index)
+* [Developer area](/developer-area/how-to-write-an-addon/)
 
 **Game designers:**
 
