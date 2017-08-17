@@ -13,7 +13,13 @@ This page lists the major contributors and their role in the project.
 * LordRobust (aphelion)  
     * Role: Maintainer, Addon Developer  
     * Notable contributions: Chat System, API feedback, first addon  
-    
+* spammy24
+    * Role: Translator, Addon Developer
+    * Noteable contributions: spanish translation
+* kashike
+    * Role: Problem solver
+    * Noteable contributions: Helping with various minor issues
+
 !!! tip
     Feeling like you made a major contribution? 
     Feel free to open a pr and add yourself here!
