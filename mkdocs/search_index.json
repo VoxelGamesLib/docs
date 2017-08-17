@@ -317,12 +317,12 @@
         }, 
         {
             "location": "/contributor-area/contributors/", 
-            "text": "Contributors\n\n\nVoxelGamesLib was made possible by many community members.\n\nYou can view the full list for the projects on github,\nsee the main project here as an example:\n\nhttps://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors\n\n\nThis page lists the major contributors and their role in the project.\n\n\n\n\nMiniDigger (\n)  \n\n\nRole: Founder and Maintainer  \n\n\nNotable contributions: General api design  \n\n\n\n\n\n\nLordRobust (aphelion)  \n\n\nRole: Maintainer, Addon Developer  \n\n\nNotable contributions: Chat System, API feedback, first addon  \n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFeeling like you made a major contribution? \nFeel free to open a pr and add yourself here!", 
+            "text": "Contributors\n\n\nVoxelGamesLib was made possible by many community members.\n\nYou can view the full list for the projects on github,\nsee the main project here as an example:\n\nhttps://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors\n\n\nThis page lists the major contributors and their role in the project.\n\n\n\n\nMiniDigger (\n)  \n\n\nRole: Founder and Maintainer  \n\n\nNotable contributions: General api design  \n\n\n\n\n\n\nLordRobust (aphelion)  \n\n\nRole: Maintainer, Addon Developer  \n\n\nNotable contributions: Chat System, API feedback, first addon  \n\n\n\n\n\n\nspammy24\n\n\nRole: Translator, Addon Developer\n\n\nNoteable contributions: spanish translation\n\n\n\n\n\n\nkashike\n\n\nRole: Problem solver\n\n\nNoteable contributions: Helping with various minor issues\n\n\n\n\n\n\n\n\n\n\nTip\n\n\nFeeling like you made a major contribution? \nFeel free to open a pr and add yourself here!", 
             "title": "Contributors"
         }, 
         {
             "location": "/contributor-area/contributors/#contributors", 
-            "text": "VoxelGamesLib was made possible by many community members. \nYou can view the full list for the projects on github,\nsee the main project here as an example: https://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors  This page lists the major contributors and their role in the project.   MiniDigger ( )    Role: Founder and Maintainer    Notable contributions: General api design      LordRobust (aphelion)    Role: Maintainer, Addon Developer    Notable contributions: Chat System, API feedback, first addon        Tip  Feeling like you made a major contribution? \nFeel free to open a pr and add yourself here!", 
+            "text": "VoxelGamesLib was made possible by many community members. \nYou can view the full list for the projects on github,\nsee the main project here as an example: https://github.com/VoxelGamesLib/VoxelGamesLibv2/graphs/contributors  This page lists the major contributors and their role in the project.   MiniDigger ( )    Role: Founder and Maintainer    Notable contributions: General api design      LordRobust (aphelion)    Role: Maintainer, Addon Developer    Notable contributions: Chat System, API feedback, first addon      spammy24  Role: Translator, Addon Developer  Noteable contributions: spanish translation    kashike  Role: Problem solver  Noteable contributions: Helping with various minor issues      Tip  Feeling like you made a major contribution? \nFeel free to open a pr and add yourself here!", 
             "title": "Contributors"
         }, 
         {
@@ -347,18 +347,33 @@
         }, 
         {
             "location": "/contributor-area/contribute-translations/", 
-            "text": "Contribute translations\n\n\nThis page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.", 
+            "text": "Contribute translations\n\n\nThis page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.\n\n\nVGL uses POEditor. POEditor is a site that allows a community to easily contribute on translating a project. All you have to sign up on their site and request to join the VGL project. You then can choose a language and start translating away! You also can correct translations by others or use the comments under every string to discuss wording and stuff like that. \n(TODO insert links here)\n\n\nLanguage String format\n\n\nVGL has its own format for how you can format messages. It allows you to include text colors, text decorations, click and hover events and variables.\n\nThe parser for the messages was written to be as forgiving as possible, so small syntax errors (like forgetting to close a color tag) will still be rendered ingame, altho it might produce a different output as you might expect.", 
             "title": "Contribute Translations"
         }, 
         {
             "location": "/contributor-area/contribute-translations/#contribute-translations", 
-            "text": "This page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.", 
+            "text": "This page will explain how you can contribute your translated string \nto the project so everybody can enjoy VGL in their native language.  VGL uses POEditor. POEditor is a site that allows a community to easily contribute on translating a project. All you have to sign up on their site and request to join the VGL project. You then can choose a language and start translating away! You also can correct translations by others or use the comments under every string to discuss wording and stuff like that. \n(TODO insert links here)", 
             "title": "Contribute translations"
         }, 
         {
+            "location": "/contributor-area/contribute-translations/#language-string-format", 
+            "text": "VGL has its own format for how you can format messages. It allows you to include text colors, text decorations, click and hover events and variables. \nThe parser for the messages was written to be as forgiving as possible, so small syntax errors (like forgetting to close a color tag) will still be rendered ingame, altho it might produce a different output as you might expect.", 
+            "title": "Language String format"
+        }, 
+        {
             "location": "/contributor-area/create-bug-reports-or-feature-requests/", 
-            "text": "", 
+            "text": "Creating bug reports or feature requests\n\n\nNo software is perfect, expecially in the early stages. VGL is still filled with minor bugs or is missing some nice features the team didn't come up with yet.\n\nWe need your help for that!  \n\n\nBug reports\n\n\nFound an issue? Had a crash? Let us know! You should report every ever so small annoyance you encounter. We trive to make o", 
             "title": "Create bug reports or feature requests"
+        }, 
+        {
+            "location": "/contributor-area/create-bug-reports-or-feature-requests/#creating-bug-reports-or-feature-requests", 
+            "text": "No software is perfect, expecially in the early stages. VGL is still filled with minor bugs or is missing some nice features the team didn't come up with yet. \nWe need your help for that!", 
+            "title": "Creating bug reports or feature requests"
+        }, 
+        {
+            "location": "/contributor-area/create-bug-reports-or-feature-requests/#bug-reports", 
+            "text": "Found an issue? Had a crash? Let us know! You should report every ever so small annoyance you encounter. We trive to make o", 
+            "title": "Bug reports"
         }, 
         {
             "location": "/contributor-area/contributors-corner/", 
