@@ -1,4 +1,4 @@
-language: python3
+sudo: true
 notifications: {
   "email": false,
   "irc": {
