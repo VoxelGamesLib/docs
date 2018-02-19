@@ -1,0 +1,2389 @@
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+        <meta name="description" content="Developer and user documentation for VoxelGamesLib v2">
+      
+      
+      
+        <meta name="author" content="VoxelGamesLib">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.6.3">
+    
+    
+      
+        <title>Features - VoxelGamesLib Documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/application.9b572555.css">
+      
+    
+    
+      <script src="../../assets/javascripts/modernizr.1aa3b519.js"></script>
+    
+    
+      
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448"
+    viewBox="0 0 416 448" id="github">
+  <path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19-18.125
+        8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19 18.125-8.5
+        18.125 8.5 10.75 19 3.125 20.5zM320 304q0 10-3.125 20.5t-10.75
+        19-18.125 8.5-18.125-8.5-10.75-19-3.125-20.5 3.125-20.5 10.75-19
+        18.125-8.5 18.125 8.5 10.75 19 3.125 20.5zM360
+        304q0-30-17.25-51t-46.75-21q-10.25 0-48.75 5.25-17.75 2.75-39.25
+        2.75t-39.25-2.75q-38-5.25-48.75-5.25-29.5 0-46.75 21t-17.25 51q0 22 8
+        38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0
+        37.25-1.75t35-7.375 30.5-15 20.25-25.75 8-38.375zM416 260q0 51.75-15.25
+        82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5-41.75
+        1.125q-19.5 0-35.5-0.75t-36.875-3.125-38.125-7.5-34.25-12.875-30.25-20.25-21.5-28.75q-15.5-30.75-15.5-82.75
+        0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25
+        30.875q36.75-8.75 77.25-8.75 37 0 70 8 26.25-20.5
+        46.75-30.25t47.25-9.75q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34
+        99.5z" />
+</svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <a href="#features" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../.." title="VoxelGamesLib Documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            
+              <span class="md-header-nav__topic">
+                VoxelGamesLib Documentation
+              </span>
+              <span class="md-header-nav__topic">
+                Features
+              </span>
+            
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          
+            <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+            
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+          
+        
+      </div>
+      
+        <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+
+
+  
+
+
+  <a href="https://github.com/VoxelGamesLib/VoxelGamesLibv2/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      VoxelGamesLib
+    </div>
+  </a>
+
+          </div>
+        </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <span class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </span>
+    VoxelGamesLib Documentation
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/VoxelGamesLib/VoxelGamesLibv2/" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      VoxelGamesLib
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../.." title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
+    
+    <label class="md-nav__link" for="nav-2">
+      General
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-2">
+        General
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../general/doctrine/" title="Doctrine" class="md-nav__link">
+      Doctrine
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../general/getting-started/" title="Getting started" class="md-nav__link">
+      Getting started
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../general/terms/" title="Terms" class="md-nav__link">
+      Terms
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3" checked>
+    
+    <label class="md-nav__link" for="nav-3">
+      Components
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-3">
+        Components
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Features
+      </label>
+    
+    <a href="./" title="Features" class="md-nav__link md-nav__link--active">
+      Features
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#postgamefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturespostgamefeature-v10" title="PostGameFeature(com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0" class="md-nav__link">
+    PostGameFeature(com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scoreboardfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesscoreboardfeature-v10" title="ScoreboardFeature(com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0" class="md-nav__link">
+    ScoreboardFeature(com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_1" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_1" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_1" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumppadcomvoxelgameslibvoxelgameslibfeaturefeaturesjumppadfeature-v10" title="JumpPad(com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0" class="md-nav__link">
+    JumpPad(com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_2" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_2" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_2" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clearinventoryfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesclearinventoryfeature-v10" title="ClearInventoryFeature(com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0" class="md-nav__link">
+    ClearInventoryFeature(com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_3" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_3" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_3" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesspawnfeature-v10" title="SpawnFeature(com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0" class="md-nav__link">
+    SpawnFeature(com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_4" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_4" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_4" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#channelfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureschannelfeature-v10" title="ChannelFeature(com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0" class="md-nav__link">
+    ChannelFeature(com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_5" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_5" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_5" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#votefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvotefeature-v10" title="VoteFeature(com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0" class="md-nav__link">
+    VoteFeature(com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_6" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_6" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_6" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gamemodefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesgamemodefeature-v10" title="GameModeFeature(com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0" class="md-nav__link">
+    GameModeFeature(com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_7" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_7" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_7" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doublejumpfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesdoublejumpfeature-v10" title="DoubleJumpFeature(com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0" class="md-nav__link">
+    DoubleJumpFeature(com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_8" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_8" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_8" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nohungerlossfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnohungerlossfeature-v10" title="NoHungerLossFeature(com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0" class="md-nav__link">
+    NoHungerLossFeature(com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_9" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_9" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_9" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voidteleportfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvoidteleportfeature-v10" title="VoidTeleportFeature(com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0" class="md-nav__link">
+    VoidTeleportFeature(com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_10" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_10" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_10" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapfeature-v10" title="MapFeature(com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0" class="md-nav__link">
+    MapFeature(com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_11" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_11" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_11" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#healfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureshealfeature-v10" title="HealFeature(com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0" class="md-nav__link">
+    HealFeature(com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_12" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_12" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_12" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noblockbreakfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockbreakfeature-v10" title="NoBlockBreakFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0" class="md-nav__link">
+    NoBlockBreakFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_13" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_13" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_13" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapinfofeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapinfofeature-v10" title="MapInfoFeature(com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0" class="md-nav__link">
+    MapInfoFeature(com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_14" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_14" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_14" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autorespawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesautorespawnfeature-v10" title="AutoRespawnFeature(com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0" class="md-nav__link">
+    AutoRespawnFeature(com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_15" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_15" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_15" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodamagefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnodamagefeature-v10" title="NoDamageFeature(com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0" class="md-nav__link">
+    NoDamageFeature(com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_16" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_16" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_16" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personalscoreboardcomvoxelgameslibvoxelgameslibfeaturefeaturespersonalscoreboardfeature-v10" title="PersonalScoreboard(com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0" class="md-nav__link">
+    PersonalScoreboard(com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_17" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_17" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_17" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noblockplacefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockplacefeature-v10" title="NoBlockPlaceFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0" class="md-nav__link">
+    NoBlockPlaceFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_18" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_18" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_18" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../phases/" title="Phases" class="md-nav__link">
+      Phases
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../games/" title="Games" class="md-nav__link">
+      Games
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Mapper Area
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        Mapper Area
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../maps/introduction/" title="Introduction" class="md-nav__link">
+      Introduction
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../maps/how-to-create-a-map/" title="How to create a map" class="md-nav__link">
+      How to create a map
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Designer Area
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        Designer Area
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../designer-area/" title="Index" class="md-nav__link">
+      Index
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Developer Area
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Developer Area
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/how-to-write-an-addon/" title="How to write an addon" class="md-nav__link">
+      How to write an addon
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/how-to-write-a-feature/" title="How to write a feature" class="md-nav__link">
+      How to write a feature
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/how-to-write-a-phase/" title="How to write a phase" class="md-nav__link">
+      How to write a phase
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/how-to-write-a-game/" title="How to write a game" class="md-nav__link">
+      How to write a game
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/how-to-use-the-i18n-api/" title="How to use the i18n API" class="md-nav__link">
+      How to use the i18n API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/introduction-to-guice/" title="Introduction to Guice" class="md-nav__link">
+      Introduction to Guice
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7">
+    
+    <label class="md-nav__link" for="nav-6-7">
+      APIs
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-7">
+        APIs
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/apis/scoreboard/" title="Scoreboard API" class="md-nav__link">
+      Scoreboard API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/apis/kit/" title="Kit API" class="md-nav__link">
+      Kit API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/apis/sign/" title="Sign API" class="md-nav__link">
+      Sign API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/apis/elo/" title="Elo API" class="md-nav__link">
+      Elo API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/apis/command/" title="Command API" class="md-nav__link">
+      Command API
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../developer-area/apis/ability/" title="Ability API" class="md-nav__link">
+      Ability API
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Contributor Area
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        Contributor Area
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/general/" title="General" class="md-nav__link">
+      General
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/contributors/" title="Contributors" class="md-nav__link">
+      Contributors
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/contribute-code/" title="Contribute Code" class="md-nav__link">
+      Contribute Code
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/contribute-maps/" title="Contribute Maps" class="md-nav__link">
+      Contribute Maps
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/contribute-translations/" title="Contribute Translations" class="md-nav__link">
+      Contribute Translations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/create-bug-reports-or-feature-requests/" title="Create bug reports or feature requests" class="md-nav__link">
+      Create bug reports or feature requests
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../contributor-area/contributors-corner/" title="Contributor's Corner" class="md-nav__link">
+      Contributor's Corner
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Test
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        Test
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../test/testpage/" title="Test" class="md-nav__link">
+      Test
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#postgamefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturespostgamefeature-v10" title="PostGameFeature(com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0" class="md-nav__link">
+    PostGameFeature(com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scoreboardfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesscoreboardfeature-v10" title="ScoreboardFeature(com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0" class="md-nav__link">
+    ScoreboardFeature(com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_1" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_1" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_1" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jumppadcomvoxelgameslibvoxelgameslibfeaturefeaturesjumppadfeature-v10" title="JumpPad(com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0" class="md-nav__link">
+    JumpPad(com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_2" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_2" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_2" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#clearinventoryfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesclearinventoryfeature-v10" title="ClearInventoryFeature(com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0" class="md-nav__link">
+    ClearInventoryFeature(com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_3" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_3" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_3" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#spawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesspawnfeature-v10" title="SpawnFeature(com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0" class="md-nav__link">
+    SpawnFeature(com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_4" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_4" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_4" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#channelfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureschannelfeature-v10" title="ChannelFeature(com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0" class="md-nav__link">
+    ChannelFeature(com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_5" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_5" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_5" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#votefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvotefeature-v10" title="VoteFeature(com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0" class="md-nav__link">
+    VoteFeature(com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_6" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_6" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_6" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#gamemodefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesgamemodefeature-v10" title="GameModeFeature(com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0" class="md-nav__link">
+    GameModeFeature(com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_7" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_7" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_7" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#doublejumpfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesdoublejumpfeature-v10" title="DoubleJumpFeature(com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0" class="md-nav__link">
+    DoubleJumpFeature(com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_8" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_8" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_8" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nohungerlossfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnohungerlossfeature-v10" title="NoHungerLossFeature(com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0" class="md-nav__link">
+    NoHungerLossFeature(com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_9" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_9" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_9" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#voidteleportfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvoidteleportfeature-v10" title="VoidTeleportFeature(com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0" class="md-nav__link">
+    VoidTeleportFeature(com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_10" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_10" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_10" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapfeature-v10" title="MapFeature(com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0" class="md-nav__link">
+    MapFeature(com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_11" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_11" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_11" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#healfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureshealfeature-v10" title="HealFeature(com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0" class="md-nav__link">
+    HealFeature(com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_12" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_12" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_12" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noblockbreakfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockbreakfeature-v10" title="NoBlockBreakFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0" class="md-nav__link">
+    NoBlockBreakFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_13" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_13" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_13" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mapinfofeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapinfofeature-v10" title="MapInfoFeature(com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0" class="md-nav__link">
+    MapInfoFeature(com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_14" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_14" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_14" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autorespawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesautorespawnfeature-v10" title="AutoRespawnFeature(com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0" class="md-nav__link">
+    AutoRespawnFeature(com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_15" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_15" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_15" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nodamagefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnodamagefeature-v10" title="NoDamageFeature(com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0" class="md-nav__link">
+    NoDamageFeature(com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_16" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_16" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_16" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#personalscoreboardcomvoxelgameslibvoxelgameslibfeaturefeaturespersonalscoreboardfeature-v10" title="PersonalScoreboard(com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0" class="md-nav__link">
+    PersonalScoreboard(com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_17" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_17" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_17" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#noblockplacefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockplacefeature-v10" title="NoBlockPlaceFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0" class="md-nav__link">
+    NoBlockPlaceFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#params_18" title="Params" class="md-nav__link">
+    Params
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dependencies_18" title="Dependencies" class="md-nav__link">
+    Dependencies
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#soft-dependencies_18" title="Soft Dependencies" class="md-nav__link">
+    Soft Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                  <a href="https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/docs/components/features.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                
+                
+                <h1 id="features">Features<a class="headerlink" href="#features" title="Permanent link">&para;</a></h1>
+<p>There is not much here yet, but in the future this will be the place
+where all features are listed and its parameters explained.
+This may also contain links and documentation for 3<sup>rd</sup> party features.</p>
+<p>[features]</p>
+<h3 id="postgamefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturespostgamefeature-v10">PostGameFeature(com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0<a class="headerlink" href="#postgamefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturespostgamefeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: aphelion<br />
+Description: Implements post-game logic  </p>
+<h4 id="params">Params<a class="headerlink" href="#params" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies">Dependencies<a class="headerlink" href="#dependencies" title="Permanent link">&para;</a></h4>
+<p>com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature  </p>
+<h4 id="soft-dependencies">Soft Dependencies<a class="headerlink" href="#soft-dependencies" title="Permanent link">&para;</a></h4>
+<h3 id="scoreboardfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesscoreboardfeature-v10">ScoreboardFeature(com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0<a class="headerlink" href="#scoreboardfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesscoreboardfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Handles the scoreboard for all other features  </p>
+<h4 id="params_1">Params<a class="headerlink" href="#params_1" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_1">Dependencies<a class="headerlink" href="#dependencies_1" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_1">Soft Dependencies<a class="headerlink" href="#soft-dependencies_1" title="Permanent link">&para;</a></h4>
+<h3 id="jumppadcomvoxelgameslibvoxelgameslibfeaturefeaturesjumppadfeature-v10">JumpPad(com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0<a class="headerlink" href="#jumppadcomvoxelgameslibvoxelgameslibfeaturefeaturesjumppadfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Lets players use pressure plates to get launched up in the sky  </p>
+<h4 id="params_2">Params<a class="headerlink" href="#params_2" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_2">Dependencies<a class="headerlink" href="#dependencies_2" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_2">Soft Dependencies<a class="headerlink" href="#soft-dependencies_2" title="Permanent link">&para;</a></h4>
+<h3 id="clearinventoryfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesclearinventoryfeature-v10">ClearInventoryFeature(com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0<a class="headerlink" href="#clearinventoryfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesclearinventoryfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Simple feature that clears the inventory of all players when the game starts (or a new player joins)  </p>
+<h4 id="params_3">Params<a class="headerlink" href="#params_3" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_3">Dependencies<a class="headerlink" href="#dependencies_3" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_3">Soft Dependencies<a class="headerlink" href="#soft-dependencies_3" title="Permanent link">&para;</a></h4>
+<h3 id="spawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesspawnfeature-v10">SpawnFeature(com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0<a class="headerlink" href="#spawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesspawnfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Handles (re)spawning  </p>
+<h4 id="params_4">Params<a class="headerlink" href="#params_4" title="Permanent link">&para;</a></h4>
+<p>isRespawn (boolean)<br />
+isInitialSpawn (boolean)  </p>
+<h4 id="dependencies_4">Dependencies<a class="headerlink" href="#dependencies_4" title="Permanent link">&para;</a></h4>
+<p>com.voxelgameslib.voxelgameslib.feature.features.MapFeature  </p>
+<h4 id="soft-dependencies_4">Soft Dependencies<a class="headerlink" href="#soft-dependencies_4" title="Permanent link">&para;</a></h4>
+<h3 id="channelfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureschannelfeature-v10">ChannelFeature(com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0<a class="headerlink" href="#channelfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureschannelfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: aphel<br />
+Description: Adds support for multiple channels in phases, e.g. for team based chats  </p>
+<h4 id="params_5">Params<a class="headerlink" href="#params_5" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_5">Dependencies<a class="headerlink" href="#dependencies_5" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_5">Soft Dependencies<a class="headerlink" href="#soft-dependencies_5" title="Permanent link">&para;</a></h4>
+<h3 id="votefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvotefeature-v10">VoteFeature(com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0<a class="headerlink" href="#votefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvotefeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Allow players to vote on maps  </p>
+<h4 id="params_6">Params<a class="headerlink" href="#params_6" title="Permanent link">&para;</a></h4>
+<p>maxMaps (int)<br />
+enableVoteMenu (boolean)  </p>
+<h4 id="dependencies_6">Dependencies<a class="headerlink" href="#dependencies_6" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_6">Soft Dependencies<a class="headerlink" href="#soft-dependencies_6" title="Permanent link">&para;</a></h4>
+<h3 id="gamemodefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesgamemodefeature-v10">GameModeFeature(com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0<a class="headerlink" href="#gamemodefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesgamemodefeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Simple feature that changes the gamemode of all players in the phase  </p>
+<h4 id="params_7">Params<a class="headerlink" href="#params_7" title="Permanent link">&para;</a></h4>
+<p>mode (org.bukkit.GameMode)  </p>
+<h4 id="dependencies_7">Dependencies<a class="headerlink" href="#dependencies_7" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_7">Soft Dependencies<a class="headerlink" href="#soft-dependencies_7" title="Permanent link">&para;</a></h4>
+<h3 id="doublejumpfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesdoublejumpfeature-v10">DoubleJumpFeature(com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0<a class="headerlink" href="#doublejumpfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesdoublejumpfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Lets player jump higher  </p>
+<h4 id="params_8">Params<a class="headerlink" href="#params_8" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_8">Dependencies<a class="headerlink" href="#dependencies_8" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_8">Soft Dependencies<a class="headerlink" href="#soft-dependencies_8" title="Permanent link">&para;</a></h4>
+<h3 id="nohungerlossfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnohungerlossfeature-v10">NoHungerLossFeature(com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0<a class="headerlink" href="#nohungerlossfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnohungerlossfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: aphelion<br />
+Description: Stops hunger loss  </p>
+<h4 id="params_9">Params<a class="headerlink" href="#params_9" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_9">Dependencies<a class="headerlink" href="#dependencies_9" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_9">Soft Dependencies<a class="headerlink" href="#soft-dependencies_9" title="Permanent link">&para;</a></h4>
+<h3 id="voidteleportfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvoidteleportfeature-v10">VoidTeleportFeature(com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0<a class="headerlink" href="#voidteleportfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesvoidteleportfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: aphel<br />
+Description: Teleports player to spawn if they fall into the void  </p>
+<h4 id="params_10">Params<a class="headerlink" href="#params_10" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_10">Dependencies<a class="headerlink" href="#dependencies_10" title="Permanent link">&para;</a></h4>
+<p>com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature  </p>
+<h4 id="soft-dependencies_10">Soft Dependencies<a class="headerlink" href="#soft-dependencies_10" title="Permanent link">&para;</a></h4>
+<h3 id="mapfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapfeature-v10">MapFeature(com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0<a class="headerlink" href="#mapfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Handles loading and unloading of the map for this phase  </p>
+<h4 id="params_11">Params<a class="headerlink" href="#params_11" title="Permanent link">&para;</a></h4>
+<p>shouldUnload (boolean)<br />
+type (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)  </p>
+<h4 id="dependencies_11">Dependencies<a class="headerlink" href="#dependencies_11" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_11">Soft Dependencies<a class="headerlink" href="#soft-dependencies_11" title="Permanent link">&para;</a></h4>
+<h3 id="healfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureshealfeature-v10">HealFeature(com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0<a class="headerlink" href="#healfeaturecomvoxelgameslibvoxelgameslibfeaturefeatureshealfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Small feature that heals and feeds players on join  </p>
+<h4 id="params_12">Params<a class="headerlink" href="#params_12" title="Permanent link">&para;</a></h4>
+<p>heal (boolean)<br />
+feed (boolean)  </p>
+<h4 id="dependencies_12">Dependencies<a class="headerlink" href="#dependencies_12" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_12">Soft Dependencies<a class="headerlink" href="#soft-dependencies_12" title="Permanent link">&para;</a></h4>
+<h3 id="noblockbreakfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockbreakfeature-v10">NoBlockBreakFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0<a class="headerlink" href="#noblockbreakfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockbreakfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Small feature that blocks block breaking if active  </p>
+<h4 id="params_13">Params<a class="headerlink" href="#params_13" title="Permanent link">&para;</a></h4>
+<p>whitelist ([Lorg.bukkit.Material;)<br />
+blacklist ([Lorg.bukkit.Material;)  </p>
+<h4 id="dependencies_13">Dependencies<a class="headerlink" href="#dependencies_13" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_13">Soft Dependencies<a class="headerlink" href="#soft-dependencies_13" title="Permanent link">&para;</a></h4>
+<h3 id="mapinfofeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapinfofeature-v10">MapInfoFeature(com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0<a class="headerlink" href="#mapinfofeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesmapinfofeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Displays some information about the current map in the scoreboard of the phase  </p>
+<h4 id="params_14">Params<a class="headerlink" href="#params_14" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_14">Dependencies<a class="headerlink" href="#dependencies_14" title="Permanent link">&para;</a></h4>
+<p>com.voxelgameslib.voxelgameslib.feature.features.MapFeature<br />
+com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature  </p>
+<h4 id="soft-dependencies_14">Soft Dependencies<a class="headerlink" href="#soft-dependencies_14" title="Permanent link">&para;</a></h4>
+<h3 id="autorespawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesautorespawnfeature-v10">AutoRespawnFeature(com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0<a class="headerlink" href="#autorespawnfeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesautorespawnfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Makes dead players respawn automatically  </p>
+<h4 id="params_15">Params<a class="headerlink" href="#params_15" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_15">Dependencies<a class="headerlink" href="#dependencies_15" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_15">Soft Dependencies<a class="headerlink" href="#soft-dependencies_15" title="Permanent link">&para;</a></h4>
+<h3 id="nodamagefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnodamagefeature-v10">NoDamageFeature(com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0<a class="headerlink" href="#nodamagefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnodamagefeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Small feature that disables any damage  </p>
+<h4 id="params_16">Params<a class="headerlink" href="#params_16" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_16">Dependencies<a class="headerlink" href="#dependencies_16" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_16">Soft Dependencies<a class="headerlink" href="#soft-dependencies_16" title="Permanent link">&para;</a></h4>
+<h3 id="personalscoreboardcomvoxelgameslibvoxelgameslibfeaturefeaturespersonalscoreboardfeature-v10">PersonalScoreboard(com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0<a class="headerlink" href="#personalscoreboardcomvoxelgameslibvoxelgameslibfeaturefeaturespersonalscoreboardfeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: aphel<br />
+Description: Each player has their own individual scoreboard  </p>
+<h4 id="params_17">Params<a class="headerlink" href="#params_17" title="Permanent link">&para;</a></h4>
+<h4 id="dependencies_17">Dependencies<a class="headerlink" href="#dependencies_17" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_17">Soft Dependencies<a class="headerlink" href="#soft-dependencies_17" title="Permanent link">&para;</a></h4>
+<h3 id="noblockplacefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockplacefeature-v10">NoBlockPlaceFeature(com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0<a class="headerlink" href="#noblockplacefeaturecomvoxelgameslibvoxelgameslibfeaturefeaturesnoblockplacefeature-v10" title="Permanent link">&para;</a></h3>
+<p>Author: MiniDigger<br />
+Description: Small feature that blocks block placing if active  </p>
+<h4 id="params_18">Params<a class="headerlink" href="#params_18" title="Permanent link">&para;</a></h4>
+<p>whitelist ([Lorg.bukkit.Material;)<br />
+blacklist ([Lorg.bukkit.Material;)  </p>
+<h4 id="dependencies_18">Dependencies<a class="headerlink" href="#dependencies_18" title="Permanent link">&para;</a></h4>
+<h4 id="soft-dependencies_18">Soft Dependencies<a class="headerlink" href="#soft-dependencies_18" title="Permanent link">&para;</a></h4>
+                
+                  
+                
+              
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../general/" title="General" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                General
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../phases/" title="Phases" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Phases
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2017 VoxelGamesLib and Contributors
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/VoxelGamesLib" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/xMiniDiggerx" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../assets/javascripts/application.abd7b172.js"></script>
+      
+      <script>app.initialize({version:"0.17.2",url:{base:"../.."}})</script>
+      
+    
+    
+      
+    
+  </body>
+</html>
