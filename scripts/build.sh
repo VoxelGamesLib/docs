@@ -1,3 +1,3 @@
-pip install mkdocs
-pip install mkdocs-material
+sudo pip install mkdocs
+sudo pip install mkdocs-material
 mkdocs build --clean
