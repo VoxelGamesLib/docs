@@ -10,7 +10,7 @@ echo "clone repo"
 git clone --depth 10 -b gh-pages "https://${GITHUB_TOKEN}@github.com/VoxelGamesLib/docs.git" deploy-stuff
 
 echo "copy stuff to deploy"
-cp -R site/ deploy-stuff/
+cp -R /home/travis/build/VoxelGamesLib/docs/site/ deploy-stuff/
 
 echo "add to repo"
 cd deploy-stuff
