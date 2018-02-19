@@ -9,7 +9,7 @@ notifications: {
     "skip_join": true
   }
 }
-scripts: "chmod +x scripts/build.sh && scripts/build.sh"
+script: "chmod +x scripts/build.sh && scripts/build.sh"
 deploy:
   provider: script
   script: "chmod +x scripts/deploy-build-results.sh && scripts/deploy-build-results.sh"
