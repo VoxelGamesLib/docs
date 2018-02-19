@@ -5,12 +5,26 @@ site_author: VoxelGamesLib
 repo_name: 'VoxelGamesLib'
 repo_url: 'https://github.com/VoxelGamesLib/VoxelGamesLibv2'
 
-copyright: 'Copyright &copy; 2016 - 2017 VoxelGamesLib and Contributors'
+copyright: 'Copyright &copy; 2016 - 2018 VoxelGamesLib, MiniDigger and Contributors'
 
-theme: 'material'
+theme:
+  name: 'material'
+  palette:
+    primary: 'amber'
+    accent: 'orange'
+  logo: 'images/logo.svg'
+  feature:
+    tabs: true
 
 edit_uri: 'blob/master/docs/'
 
+extra:
+  social:
+    - type: 'github'
+      link: 'https://github.com/VoxelGamesLib'
+    - type: 'twitter'
+      link: 'https://twitter.com/xMiniDiggerx'
+      
 pages:
 - Introduction: index.md
 - General:
@@ -51,19 +65,6 @@ pages:
   - Contributor's Corner: contributor-area/contributors-corner.md
 - Test:
   - Test: test/testpage.md
-
-extra:
-  palette:
-    primary: 'amber'
-    accent: 'orange'
-  logo: 'images/logo.svg'
-  social:
-    - type: 'github'
-      link: 'https://github.com/VoxelGamesLib'
-    - type: 'twitter'
-      link: 'https://twitter.com/xMiniDiggerx'
-  feature:
-    tabs: true
 
 markdown_extensions:
   # notes quotes etc
