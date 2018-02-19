@@ -8,12 +8,10 @@ git config --global user.name "VoxelGamesLibBot"
 
 echo "clone repo"
 git clone --depth 10 -b gh-pages "https://${GITHUB_TOKEN}@github.com/VoxelGamesLib/docs.git" deploy-stuff
-
-sudo apt-get install tree
-tree /home/travis/build/VoxelGamesLib
+rm -rf site/site/
 
 echo "copy stuff to deploy"
-cp -R /home/travis/build/VoxelGamesLib/docs/site/ deploy-stuff/
+cp -R site/* deploy-stuff/
 
 echo "add to repo"
 cd deploy-stuff
