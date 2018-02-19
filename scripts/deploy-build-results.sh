@@ -20,3 +20,5 @@ git commit -m "Deploy to Github Pages (docs)"
 echo "push"
 git push --force "https://${GITHUB_TOKEN}@github.com/VoxelGamesLib/docs.git" gh-pages:gh-pages
 echo "DONE"
+
+tree .
