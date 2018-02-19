@@ -1,7 +1,7 @@
 site_name: VoxelGamesLib Documentation
 site_description: Developer and user documentation for VoxelGamesLib v2
 site_author: VoxelGamesLib
-site_url: voxelgameslib.com
+site_url: 'https://voxelgameslib.com'
 
 repo_name: 'VoxelGamesLib'
 repo_url: 'https://github.com/VoxelGamesLib/VoxelGamesLibv2'
