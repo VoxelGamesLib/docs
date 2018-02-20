@@ -3,3 +3,4 @@
 Victory conditions are a way to end a game, once reached. 
 
 [conditions]
+todo write conditions
