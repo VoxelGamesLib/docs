@@ -12,9 +12,30 @@ Description: Small feature that disables any damage
 #### Dependencies  
 #### Soft Dependencies  
   
-### DoubleJumpFeature (com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0  
+### BleedFeature (com.voxelgameslib.voxelgameslib.feature.features.BleedFeature) v1.0  
 Author: MiniDigger  
-Description: Lets player jump higher  
+Description: Displays a bleed effect around the player  
+#### Params  
+#### Dependencies  
+#### Soft Dependencies  
+  
+### JumpPad (com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0  
+Author: MiniDigger  
+Description: Lets players use pressure plates to get launched up in the sky  
+#### Params  
+#### Dependencies  
+#### Soft Dependencies  
+  
+### ScoreboardFeature (com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0  
+Author: MiniDigger  
+Description: Handles the scoreboard for all other features  
+#### Params  
+#### Dependencies  
+#### Soft Dependencies  
+  
+### AutoRespawnFeature (com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0  
+Author: MiniDigger  
+Description: Makes dead players respawn automatically  
 #### Params  
 #### Dependencies  
 #### Soft Dependencies  
@@ -28,27 +49,6 @@ blacklist ([Lorg.bukkit.Material;)
 #### Dependencies  
 #### Soft Dependencies  
   
-### AutoRespawnFeature (com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0  
-Author: MiniDigger  
-Description: Makes dead players respawn automatically  
-#### Params  
-#### Dependencies  
-#### Soft Dependencies  
-  
-### ClearInventoryFeature (com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0  
-Author: MiniDigger  
-Description: Simple feature that clears the inventory of all players when the game starts (or a new player joins)  
-#### Params  
-#### Dependencies  
-#### Soft Dependencies  
-  
-### ScoreboardFeature (com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0  
-Author: MiniDigger  
-Description: Handles the scoreboard for all other features  
-#### Params  
-#### Dependencies  
-#### Soft Dependencies  
-  
 ### SpawnFeature (com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0  
 Author: MiniDigger  
 Description: Handles (re)spawning  
@@ -59,25 +59,9 @@ isInitialSpawn (boolean)
 com.voxelgameslib.voxelgameslib.feature.features.MapFeature  
 #### Soft Dependencies  
   
-### BleedFeature (com.voxelgameslib.voxelgameslib.feature.features.BleedFeature) v1.0  
-Author: MiniDigger  
-Description: Displays a bleed effect around the player  
-#### Params  
-#### Dependencies  
-#### Soft Dependencies  
-  
-### MapFeature (com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0  
-Author: MiniDigger  
-Description: Handles loading and unloading of the map for this phase  
-#### Params  
-shouldUnload (boolean)  
-type (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)  
-#### Dependencies  
-#### Soft Dependencies  
-  
-### JumpPad (com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0  
-Author: MiniDigger  
-Description: Lets players use pressure plates to get launched up in the sky  
+### ChannelFeature (com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0  
+Author: aphel  
+Description: Adds support for multiple channels in phases, e.g. for team based chats  
 #### Params  
 #### Dependencies  
 #### Soft Dependencies  
@@ -90,13 +74,29 @@ Description: Implements post-game logic
 com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature  
 #### Soft Dependencies  
   
-### MapInfoFeature (com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0  
+### MapFeature (com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0  
 Author: MiniDigger  
-Description: Displays some information about the current map in the scoreboard of the phase  
+Description: Handles loading and unloading of the map for this phase  
+#### Params  
+shouldUnload (boolean)  
+type (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)  
+#### Dependencies  
+#### Soft Dependencies  
+  
+### DoubleJumpFeature (com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0  
+Author: MiniDigger  
+Description: Lets player jump higher  
 #### Params  
 #### Dependencies  
-com.voxelgameslib.voxelgameslib.feature.features.MapFeature  
-com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature  
+#### Soft Dependencies  
+  
+### HealFeature (com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0  
+Author: MiniDigger  
+Description: Small feature that heals and feeds players on join  
+#### Params  
+heal (boolean)  
+feed (boolean)  
+#### Dependencies  
 #### Soft Dependencies  
   
 ### PersonalScoreboard (com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0  
@@ -114,15 +114,6 @@ Description: Teleports player to spawn if they fall into the void
 com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature  
 #### Soft Dependencies  
   
-### HealFeature (com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0  
-Author: MiniDigger  
-Description: Small feature that heals and feeds players on join  
-#### Params  
-heal (boolean)  
-feed (boolean)  
-#### Dependencies  
-#### Soft Dependencies  
-  
 ### NoHungerLossFeature (com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0  
 Author: aphelion  
 Description: Stops hunger loss  
@@ -137,13 +128,6 @@ Description: Locks the weather
 weather (org.bukkit.WeatherType)  
 #### Dependencies  
 com.voxelgameslib.voxelgameslib.feature.features.MapFeature  
-#### Soft Dependencies  
-  
-### ChannelFeature (com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0  
-Author: aphel  
-Description: Adds support for multiple channels in phases, e.g. for team based chats  
-#### Params  
-#### Dependencies  
 #### Soft Dependencies  
   
 ### NoTimeChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoTimeChangeFeature) v1.0  
@@ -164,6 +148,23 @@ blacklist ([Lorg.bukkit.Material;)
 #### Dependencies  
 #### Soft Dependencies  
   
+### GameModeFeature (com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0  
+Author: MiniDigger  
+Description: Simple feature that changes the gamemode of all players in the phase  
+#### Params  
+mode (org.bukkit.GameMode)  
+#### Dependencies  
+#### Soft Dependencies  
+  
+### MapInfoFeature (com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0  
+Author: MiniDigger  
+Description: Displays some information about the current map in the scoreboard of the phase  
+#### Params  
+#### Dependencies  
+com.voxelgameslib.voxelgameslib.feature.features.MapFeature  
+com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature  
+#### Soft Dependencies  
+  
 ### VoteFeature (com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0  
 Author: MiniDigger  
 Description: Allow players to vote on maps  
@@ -173,11 +174,10 @@ enableVoteMenu (boolean)
 #### Dependencies  
 #### Soft Dependencies  
   
-### GameModeFeature (com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0  
+### ClearInventoryFeature (com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0  
 Author: MiniDigger  
-Description: Simple feature that changes the gamemode of all players in the phase  
+Description: Simple feature that clears the inventory of all players when the game starts (or a new player joins)  
 #### Params  
-mode (org.bukkit.GameMode)  
 #### Dependencies  
 #### Soft Dependencies  
   
