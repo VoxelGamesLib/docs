@@ -97,7 +97,7 @@
         }, 
         {
             "location": "/components/features/", 
-            "text": "Features\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all features are listed and its parameters explained.\nThis may also contain links and documentation for 3\nrd\n party features.\n\n\n[features]\n\n\nNoDamageFeature (com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that disables any damage  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nScoreboardFeature (com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Handles the scoreboard for all other features  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nSpawnFeature (com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Handles (re)spawning  \n\n\nParams\n\n\nisRespawn (boolean)\n\nisInitialSpawn (boolean)  \n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature  \n\n\nSoft Dependencies\n\n\nMapInfoFeature (com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Displays some information about the current map in the scoreboard of the phase  \n\n\nParams\n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature\n\ncom.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature  \n\n\nSoft Dependencies\n\n\nJumpPad (com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Lets players use pressure plates to get launched up in the sky  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nPostGameFeature (com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0\n\n\nAuthor: aphelion\n\nDescription: Implements post-game logic  \n\n\nParams\n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature  \n\n\nSoft Dependencies\n\n\nAutoRespawnFeature (com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Makes dead players respawn automatically  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nPersonalScoreboard (com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0\n\n\nAuthor: aphel\n\nDescription: Each player has their own individual scoreboard  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nVoidTeleportFeature (com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0\n\n\nAuthor: aphel\n\nDescription: Teleports player to spawn if they fall into the void  \n\n\nParams\n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.SpawnFeature  \n\n\nSoft Dependencies\n\n\nDoubleJumpFeature (com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Lets player jump higher  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nHealFeature (com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that heals and feeds players on join  \n\n\nParams\n\n\nheal (boolean)\n\nfeed (boolean)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nClearInventoryFeature (com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Simple feature that clears the inventory of all players when the game starts (or a new player joins)  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nBleedFeature (com.voxelgameslib.voxelgameslib.feature.features.BleedFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Displays a bleed effect around the player  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoHungerLossFeature (com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0\n\n\nAuthor: aphelion\n\nDescription: Stops hunger loss  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoWeatherChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoWeatherChangeFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Locks the weather  \n\n\nParams\n\n\nweather (org.bukkit.WeatherType)  \n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature  \n\n\nSoft Dependencies\n\n\nNoTimeChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoTimeChangeFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Locks the time  \n\n\nParams\n\n\ntime (long)  \n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature  \n\n\nSoft Dependencies\n\n\nNoBlockPlaceFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that blocks block placing if active  \n\n\nParams\n\n\nwhitelist ([Lorg.bukkit.Material;)\n\nblacklist ([Lorg.bukkit.Material;)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nChannelFeature (com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0\n\n\nAuthor: aphel\n\nDescription: Adds support for multiple channels in phases, e.g. for team based chats  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nVoteFeature (com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Allow players to vote on maps  \n\n\nParams\n\n\nmaxMaps (int)\n\nenableVoteMenu (boolean)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nMapFeature (com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Handles loading and unloading of the map for this phase  \n\n\nParams\n\n\nshouldUnload (boolean)\n\ntype (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nGameModeFeature (com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Simple feature that changes the gamemode of all players in the phase  \n\n\nParams\n\n\nmode (org.bukkit.GameMode)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoBlockBreakFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that blocks block breaking if active  \n\n\nParams\n\n\nwhitelist ([Lorg.bukkit.Material;)\n\nblacklist ([Lorg.bukkit.Material;)  \n\n\nDependencies\n\n\nSoft Dependencies", 
+            "text": "Features\n\n\nThere is not much here yet, but in the future this will be the place\nwhere all features are listed and its parameters explained.\nThis may also contain links and documentation for 3\nrd\n party features.\n\n\n[features]\n\n\nAutoRespawnFeature (com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Makes dead players respawn automatically  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nBleedFeature (com.voxelgameslib.voxelgameslib.feature.features.BleedFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Displays a bleed effect around the player  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nChannelFeature (com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0\n\n\nAuthor: aphel\n\nDescription: Adds support for multiple channels in phases, e.g. for team based chats  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nClearInventoryFeature (com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Simple feature that clears the inventory of all players when the game starts (or a new player joins)  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nDoubleJumpFeature (com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Lets player jump higher  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nGameModeFeature (com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Simple feature that changes the gamemode of all players in the phase  \n\n\nParams\n\n\nmode (org.bukkit.GameMode)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nHealFeature (com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that heals and feeds players on join  \n\n\nParams\n\n\nheal (boolean)\n\nfeed (boolean)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nJumpPad (com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Lets players use pressure plates to get launched up in the sky  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nMapFeature (com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Handles loading and unloading of the map for this phase  \n\n\nParams\n\n\nshouldUnload (boolean)\n\ntype (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nMapInfoFeature (com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Displays some information about the current map in the scoreboard of the phase  \n\n\nParams\n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature\n\ncom.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature  \n\n\nSoft Dependencies\n\n\nNoBlockBreakFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that blocks block breaking if active  \n\n\nParams\n\n\nwhitelist ([Lorg.bukkit.Material;)\n\nblacklist ([Lorg.bukkit.Material;)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoBlockPlaceFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that blocks block placing if active  \n\n\nParams\n\n\nwhitelist ([Lorg.bukkit.Material;)\n\nblacklist ([Lorg.bukkit.Material;)  \n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoDamageFeature (com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Small feature that disables any damage  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoHungerLossFeature (com.voxelgameslib.voxelgameslib.feature.features.NoHungerLossFeature) v1.0\n\n\nAuthor: aphelion\n\nDescription: Stops hunger loss  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nNoTimeChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoTimeChangeFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Locks the time  \n\n\nParams\n\n\ntime (long)  \n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature  \n\n\nSoft Dependencies\n\n\nNoWeatherChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoWeatherChangeFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Locks the weather  \n\n\nParams\n\n\nweather (org.bukkit.WeatherType)  \n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature  \n\n\nSoft Dependencies\n\n\nPersonalScoreboard (com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0\n\n\nAuthor: aphel\n\nDescription: Each player has their own individual scoreboard  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nPostGameFeature (com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0\n\n\nAuthor: aphelion\n\nDescription: Implements post-game logic  \n\n\nParams\n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature  \n\n\nSoft Dependencies\n\n\nScoreboardFeature (com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Handles the scoreboard for all other features  \n\n\nParams\n\n\nDependencies\n\n\nSoft Dependencies\n\n\nSpawnFeature (com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Handles (re)spawning  \n\n\nParams\n\n\nisRespawn (boolean)\n\nisInitialSpawn (boolean)  \n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.MapFeature  \n\n\nSoft Dependencies\n\n\nVoidTeleportFeature (com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0\n\n\nAuthor: aphel\n\nDescription: Teleports player to spawn if they fall into the void  \n\n\nParams\n\n\nDependencies\n\n\ncom.voxelgameslib.voxelgameslib.feature.features.SpawnFeature  \n\n\nSoft Dependencies\n\n\nVoteFeature (com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0\n\n\nAuthor: MiniDigger\n\nDescription: Allow players to vote on maps  \n\n\nParams\n\n\nmaxMaps (int)\n\nenableVoteMenu (boolean)  \n\n\nDependencies\n\n\nSoft Dependencies", 
             "title": "Features"
         }, 
         {
@@ -106,9 +106,9 @@
             "title": "Features"
         }, 
         {
-            "location": "/components/features/#nodamagefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnodamagefeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Small feature that disables any damage", 
-            "title": "NoDamageFeature (com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0"
+            "location": "/components/features/#autorespawnfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesautorespawnfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Makes dead players respawn automatically", 
+            "title": "AutoRespawnFeature (com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params", 
@@ -126,9 +126,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#scoreboardfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesscoreboardfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Handles the scoreboard for all other features", 
-            "title": "ScoreboardFeature (com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0"
+            "location": "/components/features/#bleedfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesbleedfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Displays a bleed effect around the player", 
+            "title": "BleedFeature (com.voxelgameslib.voxelgameslib.feature.features.BleedFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_1", 
@@ -146,18 +146,18 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#spawnfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesspawnfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Handles (re)spawning", 
-            "title": "SpawnFeature (com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0"
+            "location": "/components/features/#channelfeature-comvoxelgameslibvoxelgameslibfeaturefeatureschannelfeature-v10", 
+            "text": "Author: aphel \nDescription: Adds support for multiple channels in phases, e.g. for team based chats", 
+            "title": "ChannelFeature (com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_2", 
-            "text": "isRespawn (boolean) \nisInitialSpawn (boolean)", 
+            "text": "", 
             "title": "Params"
         }, 
         {
             "location": "/components/features/#dependencies_2", 
-            "text": "com.voxelgameslib.voxelgameslib.feature.features.MapFeature", 
+            "text": "", 
             "title": "Dependencies"
         }, 
         {
@@ -166,9 +166,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#mapinfofeature-comvoxelgameslibvoxelgameslibfeaturefeaturesmapinfofeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Displays some information about the current map in the scoreboard of the phase", 
-            "title": "MapInfoFeature (com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0"
+            "location": "/components/features/#clearinventoryfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesclearinventoryfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Simple feature that clears the inventory of all players when the game starts (or a new player joins)", 
+            "title": "ClearInventoryFeature (com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_3", 
@@ -177,7 +177,7 @@
         }, 
         {
             "location": "/components/features/#dependencies_3", 
-            "text": "com.voxelgameslib.voxelgameslib.feature.features.MapFeature \ncom.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature", 
+            "text": "", 
             "title": "Dependencies"
         }, 
         {
@@ -186,9 +186,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#jumppad-comvoxelgameslibvoxelgameslibfeaturefeaturesjumppadfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Lets players use pressure plates to get launched up in the sky", 
-            "title": "JumpPad (com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0"
+            "location": "/components/features/#doublejumpfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesdoublejumpfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Lets player jump higher", 
+            "title": "DoubleJumpFeature (com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_4", 
@@ -206,18 +206,18 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#postgamefeature-comvoxelgameslibvoxelgameslibfeaturefeaturespostgamefeature-v10", 
-            "text": "Author: aphelion \nDescription: Implements post-game logic", 
-            "title": "PostGameFeature (com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0"
+            "location": "/components/features/#gamemodefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesgamemodefeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Simple feature that changes the gamemode of all players in the phase", 
+            "title": "GameModeFeature (com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_5", 
-            "text": "", 
+            "text": "mode (org.bukkit.GameMode)", 
             "title": "Params"
         }, 
         {
             "location": "/components/features/#dependencies_5", 
-            "text": "com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature", 
+            "text": "", 
             "title": "Dependencies"
         }, 
         {
@@ -226,13 +226,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#autorespawnfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesautorespawnfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Makes dead players respawn automatically", 
-            "title": "AutoRespawnFeature (com.voxelgameslib.voxelgameslib.feature.features.AutoRespawnFeature) v1.0"
+            "location": "/components/features/#healfeature-comvoxelgameslibvoxelgameslibfeaturefeatureshealfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Small feature that heals and feeds players on join", 
+            "title": "HealFeature (com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_6", 
-            "text": "", 
+            "text": "heal (boolean) \nfeed (boolean)", 
             "title": "Params"
         }, 
         {
@@ -246,9 +246,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#personalscoreboard-comvoxelgameslibvoxelgameslibfeaturefeaturespersonalscoreboardfeature-v10", 
-            "text": "Author: aphel \nDescription: Each player has their own individual scoreboard", 
-            "title": "PersonalScoreboard (com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0"
+            "location": "/components/features/#jumppad-comvoxelgameslibvoxelgameslibfeaturefeaturesjumppadfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Lets players use pressure plates to get launched up in the sky", 
+            "title": "JumpPad (com.voxelgameslib.voxelgameslib.feature.features.JumpPadFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_7", 
@@ -266,18 +266,18 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#voidteleportfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesvoidteleportfeature-v10", 
-            "text": "Author: aphel \nDescription: Teleports player to spawn if they fall into the void", 
-            "title": "VoidTeleportFeature (com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0"
+            "location": "/components/features/#mapfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesmapfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Handles loading and unloading of the map for this phase", 
+            "title": "MapFeature (com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_8", 
-            "text": "", 
+            "text": "shouldUnload (boolean) \ntype (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)", 
             "title": "Params"
         }, 
         {
             "location": "/components/features/#dependencies_8", 
-            "text": "com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature", 
+            "text": "", 
             "title": "Dependencies"
         }, 
         {
@@ -286,9 +286,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#doublejumpfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesdoublejumpfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Lets player jump higher", 
-            "title": "DoubleJumpFeature (com.voxelgameslib.voxelgameslib.feature.features.DoubleJumpFeature) v1.0"
+            "location": "/components/features/#mapinfofeature-comvoxelgameslibvoxelgameslibfeaturefeaturesmapinfofeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Displays some information about the current map in the scoreboard of the phase", 
+            "title": "MapInfoFeature (com.voxelgameslib.voxelgameslib.feature.features.MapInfoFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_9", 
@@ -297,7 +297,7 @@
         }, 
         {
             "location": "/components/features/#dependencies_9", 
-            "text": "", 
+            "text": "com.voxelgameslib.voxelgameslib.feature.features.MapFeature \ncom.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature", 
             "title": "Dependencies"
         }, 
         {
@@ -306,13 +306,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#healfeature-comvoxelgameslibvoxelgameslibfeaturefeatureshealfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Small feature that heals and feeds players on join", 
-            "title": "HealFeature (com.voxelgameslib.voxelgameslib.feature.features.HealFeature) v1.0"
+            "location": "/components/features/#noblockbreakfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnoblockbreakfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Small feature that blocks block breaking if active", 
+            "title": "NoBlockBreakFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_10", 
-            "text": "heal (boolean) \nfeed (boolean)", 
+            "text": "whitelist ([Lorg.bukkit.Material;) \nblacklist ([Lorg.bukkit.Material;)", 
             "title": "Params"
         }, 
         {
@@ -326,13 +326,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#clearinventoryfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesclearinventoryfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Simple feature that clears the inventory of all players when the game starts (or a new player joins)", 
-            "title": "ClearInventoryFeature (com.voxelgameslib.voxelgameslib.feature.features.ClearInventoryFeature) v1.0"
+            "location": "/components/features/#noblockplacefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnoblockplacefeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Small feature that blocks block placing if active", 
+            "title": "NoBlockPlaceFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_11", 
-            "text": "", 
+            "text": "whitelist ([Lorg.bukkit.Material;) \nblacklist ([Lorg.bukkit.Material;)", 
             "title": "Params"
         }, 
         {
@@ -346,9 +346,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#bleedfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesbleedfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Displays a bleed effect around the player", 
-            "title": "BleedFeature (com.voxelgameslib.voxelgameslib.feature.features.BleedFeature) v1.0"
+            "location": "/components/features/#nodamagefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnodamagefeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Small feature that disables any damage", 
+            "title": "NoDamageFeature (com.voxelgameslib.voxelgameslib.feature.features.NoDamageFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_12", 
@@ -386,13 +386,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#noweatherchangefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnoweatherchangefeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Locks the weather", 
-            "title": "NoWeatherChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoWeatherChangeFeature) v1.0"
+            "location": "/components/features/#notimechangefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnotimechangefeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Locks the time", 
+            "title": "NoTimeChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoTimeChangeFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_14", 
-            "text": "weather (org.bukkit.WeatherType)", 
+            "text": "time (long)", 
             "title": "Params"
         }, 
         {
@@ -406,13 +406,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#notimechangefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnotimechangefeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Locks the time", 
-            "title": "NoTimeChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoTimeChangeFeature) v1.0"
+            "location": "/components/features/#noweatherchangefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnoweatherchangefeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Locks the weather", 
+            "title": "NoWeatherChangeFeature (com.voxelgameslib.voxelgameslib.feature.features.NoWeatherChangeFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_15", 
-            "text": "time (long)", 
+            "text": "weather (org.bukkit.WeatherType)", 
             "title": "Params"
         }, 
         {
@@ -426,13 +426,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#noblockplacefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnoblockplacefeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Small feature that blocks block placing if active", 
-            "title": "NoBlockPlaceFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockPlaceFeature) v1.0"
+            "location": "/components/features/#personalscoreboard-comvoxelgameslibvoxelgameslibfeaturefeaturespersonalscoreboardfeature-v10", 
+            "text": "Author: aphel \nDescription: Each player has their own individual scoreboard", 
+            "title": "PersonalScoreboard (com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_16", 
-            "text": "whitelist ([Lorg.bukkit.Material;) \nblacklist ([Lorg.bukkit.Material;)", 
+            "text": "", 
             "title": "Params"
         }, 
         {
@@ -446,9 +446,9 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#channelfeature-comvoxelgameslibvoxelgameslibfeaturefeatureschannelfeature-v10", 
-            "text": "Author: aphel \nDescription: Adds support for multiple channels in phases, e.g. for team based chats", 
-            "title": "ChannelFeature (com.voxelgameslib.voxelgameslib.feature.features.ChannelFeature) v1.0"
+            "location": "/components/features/#postgamefeature-comvoxelgameslibvoxelgameslibfeaturefeaturespostgamefeature-v10", 
+            "text": "Author: aphelion \nDescription: Implements post-game logic", 
+            "title": "PostGameFeature (com.voxelgameslib.voxelgameslib.feature.features.PostGameFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_17", 
@@ -457,7 +457,7 @@
         }, 
         {
             "location": "/components/features/#dependencies_17", 
-            "text": "", 
+            "text": "com.voxelgameslib.voxelgameslib.feature.features.PersonalScoreboardFeature", 
             "title": "Dependencies"
         }, 
         {
@@ -466,13 +466,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#votefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesvotefeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Allow players to vote on maps", 
-            "title": "VoteFeature (com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0"
+            "location": "/components/features/#scoreboardfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesscoreboardfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Handles the scoreboard for all other features", 
+            "title": "ScoreboardFeature (com.voxelgameslib.voxelgameslib.feature.features.ScoreboardFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_18", 
-            "text": "maxMaps (int) \nenableVoteMenu (boolean)", 
+            "text": "", 
             "title": "Params"
         }, 
         {
@@ -486,18 +486,18 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#mapfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesmapfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Handles loading and unloading of the map for this phase", 
-            "title": "MapFeature (com.voxelgameslib.voxelgameslib.feature.features.MapFeature) v1.0"
+            "location": "/components/features/#spawnfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesspawnfeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Handles (re)spawning", 
+            "title": "SpawnFeature (com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_19", 
-            "text": "shouldUnload (boolean) \ntype (com.voxelgameslib.voxelgameslib.feature.features.MapFeature$Type)", 
+            "text": "isRespawn (boolean) \nisInitialSpawn (boolean)", 
             "title": "Params"
         }, 
         {
             "location": "/components/features/#dependencies_19", 
-            "text": "", 
+            "text": "com.voxelgameslib.voxelgameslib.feature.features.MapFeature", 
             "title": "Dependencies"
         }, 
         {
@@ -506,18 +506,18 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#gamemodefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesgamemodefeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Simple feature that changes the gamemode of all players in the phase", 
-            "title": "GameModeFeature (com.voxelgameslib.voxelgameslib.feature.features.GameModeFeature) v1.0"
+            "location": "/components/features/#voidteleportfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesvoidteleportfeature-v10", 
+            "text": "Author: aphel \nDescription: Teleports player to spawn if they fall into the void", 
+            "title": "VoidTeleportFeature (com.voxelgameslib.voxelgameslib.feature.features.VoidTeleportFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_20", 
-            "text": "mode (org.bukkit.GameMode)", 
+            "text": "", 
             "title": "Params"
         }, 
         {
             "location": "/components/features/#dependencies_20", 
-            "text": "", 
+            "text": "com.voxelgameslib.voxelgameslib.feature.features.SpawnFeature", 
             "title": "Dependencies"
         }, 
         {
@@ -526,13 +526,13 @@
             "title": "Soft Dependencies"
         }, 
         {
-            "location": "/components/features/#noblockbreakfeature-comvoxelgameslibvoxelgameslibfeaturefeaturesnoblockbreakfeature-v10", 
-            "text": "Author: MiniDigger \nDescription: Small feature that blocks block breaking if active", 
-            "title": "NoBlockBreakFeature (com.voxelgameslib.voxelgameslib.feature.features.NoBlockBreakFeature) v1.0"
+            "location": "/components/features/#votefeature-comvoxelgameslibvoxelgameslibfeaturefeaturesvotefeature-v10", 
+            "text": "Author: MiniDigger \nDescription: Allow players to vote on maps", 
+            "title": "VoteFeature (com.voxelgameslib.voxelgameslib.feature.features.VoteFeature) v1.0"
         }, 
         {
             "location": "/components/features/#params_21", 
-            "text": "whitelist ([Lorg.bukkit.Material;) \nblacklist ([Lorg.bukkit.Material;)", 
+            "text": "maxMaps (int) \nenableVoteMenu (boolean)", 
             "title": "Params"
         }, 
         {
