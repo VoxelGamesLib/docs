@@ -4,7 +4,7 @@
     
     <url>
      <loc>https://voxelgameslib.com/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -13,19 +13,19 @@
         
     <url>
      <loc>https://voxelgameslib.com/general/doctrine/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/general/getting-started/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/general/terms/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -35,25 +35,25 @@
         
     <url>
      <loc>https://voxelgameslib.com/components/general/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/components/features/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/components/phases/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/components/games/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -63,13 +63,13 @@
         
     <url>
      <loc>https://voxelgameslib.com/maps/introduction/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/maps/how-to-create-a-map/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -79,7 +79,7 @@
         
     <url>
      <loc>https://voxelgameslib.com/designer-area/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -89,37 +89,37 @@
         
     <url>
      <loc>https://voxelgameslib.com/developer-area/how-to-write-an-addon/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/developer-area/how-to-write-a-feature/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/developer-area/how-to-write-a-phase/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/developer-area/how-to-write-a-game/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/developer-area/how-to-use-the-i18n-api/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/developer-area/introduction-to-guice/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -135,43 +135,43 @@
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/general/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/contributors/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/contribute-code/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/contribute-maps/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/contribute-translations/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/create-bug-reports-or-feature-requests/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>https://voxelgameslib.com/contributor-area/contributors-corner/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -181,7 +181,7 @@
         
     <url>
      <loc>https://voxelgameslib.com/test/testpage/</loc>
-     <lastmod>2018-02-23</lastmod>
+     <lastmod>2018-02-25</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
