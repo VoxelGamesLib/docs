@@ -32,8 +32,8 @@ VGL isn't just a developer framework, it supports the server admins as well. VGL
 
 Players make the game. VGL will allow players to easily play their favorite minigames, with support for stuff like elo based matchmaking and extensive stats tracking. They will also like that you have a seamless integration with consistency, every game UX is the same, making it easy to learn new modes.
   
-*To sum it up: we care about every user of this framework, from the game developers up to the end users, and aim to provide the 
-best experience possible for everyone.*
+### To sum it up:
+*we care about every user of this framework, from the game developers up to the end users, and aim to provide the best experience possible for everyone.*
 
 ## Next Steps
 

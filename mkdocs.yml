@@ -22,9 +22,11 @@ edit_uri: 'blob/master/docs/'
 extra:
   social:
     - type: 'github'
-      link: 'https://github.com/VoxelGamesLib'
+      link: 'https://s.minidigger.me/github'
     - type: 'twitter'
-      link: 'https://twitter.com/xMiniDiggerx'
+      link: 'https://s.minidigger.me/twitter'
+    - type: 'discord'
+      link: 'https://s.minidigger.me/discord'
 google_analytics:
 - 'UA-38006759-6'
 - 'auto'
@@ -39,9 +41,11 @@ pages:
   - Features: components/features.md
   - Phases: components/phases.md
   - Games: components/games.md
+  - VictoryConditions: components/victoryconditions.md
 - Mapper Area:
   - Introduction: maps/introduction.md
   - How to create a map: maps/how-to-create-a-map.md
+  - How to edit a map: maps/how-to-edit-a-map.md
 - Designer Area:
   - Index: designer-area/index.md
 - Developer Area:
