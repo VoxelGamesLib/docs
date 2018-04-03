@@ -31,7 +31,7 @@ Need to get the games of a player? `@Inject GameHandler gameHandler`.
 Guice also has the option to have multiple instances of the same type. To specify which instance you want, you use the
 `@Named("name")` annotation.  
 VGL defined a set of named annotations, you can see them here:  
-https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/src/main/java/com/voxelgameslib/voxelgameslib/VoxelGamesLibModule.java#L58-L72  
+https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/VoxelGamesLib/src/main/java/com/voxelgameslib/voxelgameslib/VoxelGamesLibModule.java#L68-L93  
 For example, the `KitHandler` gets a reference to the kits folder like this:
 ```java
     @Inject
