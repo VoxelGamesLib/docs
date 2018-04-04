@@ -2,7 +2,7 @@
 
 VGL allows you to track all kind of stats for your players. This page will explain you how your addon and provide new stat types and how to use the api in general.
 
-# Defining new stat types
+## Defining new stat types
 
 StatTypes are defined via an enum, that has to look somewhat like this:
 
@@ -112,14 +112,14 @@ This will be used as an identifier of your addon for stats, limilar how minecraf
 The other thing you will want to change are obvisouly the enum constants. They need i18n names, a boolean stating if changes should be announced to the player, and optionally a formatter.  
 Check the `StatsFormatter` class to take a look at default formatters or implement your own one. You can fine the class [here](https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/VoxelGamesLib/src/main/java/com/voxelgameslib/voxelgameslib/stats/StatFormatter.java).
 
-# Registering external trackables (aka stat types)
+## Registering external trackables (aka stat types)
 
 Now you need to register that class. To do that, @Inject a StatHandler class into your module and in your enable method, register it with some random enum instance: 
 ```java
 statsHandler.registerTrackable(OneVsOneStats.KILLS);
 ```
 
-# Using the stats api
+## Using the stats api
 
 Using the stats api is easy:
 ```java
