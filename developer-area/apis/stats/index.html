@@ -801,9 +801,52 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Stats API
+      </label>
+    
     <a href="./" title="Stats API" class="md-nav__link md-nav__link--active">
       Stats API
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defining-new-stat-types" title="Defining new stat types" class="md-nav__link">
+    Defining new stat types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registering-external-trackables-aka-stat-types" title="Registering external trackables (aka stat types)" class="md-nav__link">
+    Registering external trackables (aka stat types)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-stats-api" title="Using the stats api" class="md-nav__link">
+    Using the stats api
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -979,6 +1022,36 @@
     
   
   
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#defining-new-stat-types" title="Defining new stat types" class="md-nav__link">
+    Defining new stat types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#registering-external-trackables-aka-stat-types" title="Registering external trackables (aka stat types)" class="md-nav__link">
+    Registering external trackables (aka stat types)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-the-stats-api" title="Using the stats api" class="md-nav__link">
+    Using the stats api
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -994,7 +1067,7 @@
                 
                 <h1 id="stats-api">Stats API<a class="headerlink" href="#stats-api" title="Permanent link">&para;</a></h1>
 <p>VGL allows you to track all kind of stats for your players. This page will explain you how your addon and provide new stat types and how to use the api in general.</p>
-<h1 id="defining-new-stat-types">Defining new stat types<a class="headerlink" href="#defining-new-stat-types" title="Permanent link">&para;</a></h1>
+<h2 id="defining-new-stat-types">Defining new stat types<a class="headerlink" href="#defining-new-stat-types" title="Permanent link">&para;</a></h2>
 <p>StatTypes are defined via an enum, that has to look somewhat like this:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
  2
@@ -1198,12 +1271,12 @@
 This will be used as an identifier of your addon for stats, limilar how minecraft keys work for items in minecraft. if you have a stats type with the prefix ONEPLUSONE and an enum constant named KILLS, you can use the stat type in commands using ONEPLUSONE:KILLS.<br />
 The other thing you will want to change are obvisouly the enum constants. They need i18n names, a boolean stating if changes should be announced to the player, and optionally a formatter.<br />
 Check the <code class="codehilite">StatsFormatter</code> class to take a look at default formatters or implement your own one. You can fine the class <a href="https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/VoxelGamesLib/src/main/java/com/voxelgameslib/voxelgameslib/stats/StatFormatter.java">here</a>.</p>
-<h1 id="registering-external-trackables-aka-stat-types">Registering external trackables (aka stat types)<a class="headerlink" href="#registering-external-trackables-aka-stat-types" title="Permanent link">&para;</a></h1>
+<h2 id="registering-external-trackables-aka-stat-types">Registering external trackables (aka stat types)<a class="headerlink" href="#registering-external-trackables-aka-stat-types" title="Permanent link">&para;</a></h2>
 <p>Now you need to register that class. To do that, @Inject a StatHandler class into your module and in your enable method, register it with some random enum instance: 
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><span class="n">statsHandler</span><span class="o">.</span><span class="na">registerTrackable</span><span class="o">(</span><span class="n">OneVsOneStats</span><span class="o">.</span><span class="na">KILLS</span><span class="o">);</span>
 </pre></div>
 </td></tr></table></p>
-<h1 id="using-the-stats-api">Using the stats api<a class="headerlink" href="#using-the-stats-api" title="Permanent link">&para;</a></h1>
+<h2 id="using-the-stats-api">Using the stats api<a class="headerlink" href="#using-the-stats-api" title="Permanent link">&para;</a></h2>
 <p>Using the stats api is easy:
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2

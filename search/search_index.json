@@ -777,8 +777,18 @@
         }, 
         {
             "location": "/developer-area/apis/elo/", 
-            "text": "", 
+            "text": "Elo\n\n\nVGL uses an implementation of the TrueSkill algorithm to calculate a Elo score for players, based on their wins and looses and the scores of their opponents.\n\nThe framework does this automatically. If you use the TeamFeature, VGL will make sure that everybody on the winning team sees an increase in their rating, while the other teams looses points.\n\nFor normal or duel based games, VGL will do the same: The winner will see an increase while the rest will some Elo.  \n\n\nIf you want to learn more about how exactly the algorithm works, I suggest you to read this excellent blog post, which helped me understand the topic: \nhttp://www.moserware.com/2010/03/computing-your-skill.html\n\nI will not explain it in full detail here, but give a slight overview:\n\nBasically, the higher the difference between your skill/rating/elo and the skill/rating/elo of your openent(s), the more elo the lower rated player can gain and the higher player can loose. if you win against a higher skilled player, you will see an higher increase in elo than winning against a lower skilled player. Additionally, trueskill also has a sort of stability factor, to work against fast changes. At the beginning, you will see fast changes in your rating, but the more games you play, the more will your elo stabilize in some area. \n\n\nThe api\n\n\nYou can get access to the rating of a User via User#getRating(GameMode). The value you will most likely be interrested in is the mean, this is what we would call the elo score. \nThats really all you need, since VGL handles everything for you.", 
             "title": "Elo API"
+        }, 
+        {
+            "location": "/developer-area/apis/elo/#elo", 
+            "text": "VGL uses an implementation of the TrueSkill algorithm to calculate a Elo score for players, based on their wins and looses and the scores of their opponents. \nThe framework does this automatically. If you use the TeamFeature, VGL will make sure that everybody on the winning team sees an increase in their rating, while the other teams looses points. \nFor normal or duel based games, VGL will do the same: The winner will see an increase while the rest will some Elo.    If you want to learn more about how exactly the algorithm works, I suggest you to read this excellent blog post, which helped me understand the topic:  http://www.moserware.com/2010/03/computing-your-skill.html \nI will not explain it in full detail here, but give a slight overview: \nBasically, the higher the difference between your skill/rating/elo and the skill/rating/elo of your openent(s), the more elo the lower rated player can gain and the higher player can loose. if you win against a higher skilled player, you will see an higher increase in elo than winning against a lower skilled player. Additionally, trueskill also has a sort of stability factor, to work against fast changes. At the beginning, you will see fast changes in your rating, but the more games you play, the more will your elo stabilize in some area.", 
+            "title": "Elo"
+        }, 
+        {
+            "location": "/developer-area/apis/elo/#the-api", 
+            "text": "You can get access to the rating of a User via User#getRating(GameMode). The value you will most likely be interrested in is the mean, this is what we would call the elo score. \nThats really all you need, since VGL handles everything for you.", 
+            "title": "The api"
         }, 
         {
             "location": "/developer-area/apis/command/", 

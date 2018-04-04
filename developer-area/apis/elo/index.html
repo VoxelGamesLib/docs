@@ -99,6 +99,10 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
     
+      <a href="#elo" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav md-grid">
@@ -746,10 +750,41 @@
     
     <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
     
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Elo API
+      </label>
     
     <a href="./" title="Elo API" class="md-nav__link md-nav__link--active">
       Elo API
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-api" title="The api" class="md-nav__link">
+    The api
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -963,6 +998,37 @@
               </div>
             
             
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-api" title="The api" class="md-nav__link">
+    The api
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           <div class="md-content">
             <article class="md-content__inner md-typeset">
@@ -971,9 +1037,16 @@
                   <a href="https://github.com/VoxelGamesLib/VoxelGamesLibv2/blob/master/docs/developer-area/apis/elo.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                  <h1>Elo API</h1>
-                
-                
+                <h1 id="elo">Elo<a class="headerlink" href="#elo" title="Permanent link">&para;</a></h1>
+<p>VGL uses an implementation of the TrueSkill algorithm to calculate a Elo score for players, based on their wins and looses and the scores of their opponents.<br />
+The framework does this automatically. If you use the TeamFeature, VGL will make sure that everybody on the winning team sees an increase in their rating, while the other teams looses points.<br />
+For normal or duel based games, VGL will do the same: The winner will see an increase while the rest will some Elo.  </p>
+<p>If you want to learn more about how exactly the algorithm works, I suggest you to read this excellent blog post, which helped me understand the topic: <a href="http://www.moserware.com/2010/03/computing-your-skill.html">http://www.moserware.com/2010/03/computing-your-skill.html</a>
+I will not explain it in full detail here, but give a slight overview:<br />
+Basically, the higher the difference between your skill/rating/elo and the skill/rating/elo of your openent(s), the more elo the lower rated player can gain and the higher player can loose. if you win against a higher skilled player, you will see an higher increase in elo than winning against a lower skilled player. Additionally, trueskill also has a sort of stability factor, to work against fast changes. At the beginning, you will see fast changes in your rating, but the more games you play, the more will your elo stabilize in some area. </p>
+<h2 id="the-api">The api<a class="headerlink" href="#the-api" title="Permanent link">&para;</a></h2>
+<p>You can get access to the rating of a User via User#getRating(GameMode). The value you will most likely be interrested in is the mean, this is what we would call the elo score. 
+Thats really all you need, since VGL handles everything for you.</p>
                 
                   
                 
