@@ -637,7 +637,7 @@
         }, 
         {
             "location": "/maps/how-to-edit-a-map/", 
-            "text": "How to edit a map\n\n\nThis page aims to explain how to edit a map, once it was addded to a world repository. \n\n\nTODO: add images and a vid.\n\n\nWorldCreator Modify Mode\n\n\nYou can enter the edit mode again by running \n/wc m start \nworldname\n. VGL will get the world, unzip it and load it, while teleporting you to the center. \n\n\nNow you can utilize a bunch of commands to modify the world. You an use \n/wc m\n with the subcommands \ndisplayname\n, \nauthor\n, \nradius\n, \ncenter\n or \ngamemode\n to change those.  \n\n\nTo change markers (they should be currently visible), enter \n/editmode on\n and use the same commands you know already.  \n\n\nOnce you are done, run \n/editmode off\n and \n/wc m stop\n to stop editing. This will let VGL do all the packaging, saving and uploading again and the changed map will be available to be used in games.", 
+            "text": "How to edit a map\n\n\nThis page aims to explain how to edit a map, once it was addded to a world repository. \n\n\nTODO: add images and a vid.\n\n\nWorldCreator Modify Mode\n\n\nYou can enter the edit mode again by running \n/wm start \nworldname\n. VGL will get the world, unzip it and load it, while teleporting you to the center. \n\n\nNow you can utilize a bunch of commands to modify the world. You an use \n/wm\n with the subcommands \ndisplayname\n, \nauthor\n, \nradius\n, \ncenter\n or \ngamemode\n to change those.  \n\n\nTo change markers (they should be currently visible), enter \n/editmode on\n and use the same commands you know already.  \n\n\nOnce you are done, run \n/editmode off\n and \n/wm stop\n to stop editing. This will let VGL do all the packaging, saving and uploading again and the changed map will be available to be used in games.", 
             "title": "How to edit a map"
         }, 
         {
@@ -647,7 +647,7 @@
         }, 
         {
             "location": "/maps/how-to-edit-a-map/#worldcreator-modify-mode", 
-            "text": "You can enter the edit mode again by running  /wc m start  worldname . VGL will get the world, unzip it and load it, while teleporting you to the center.   Now you can utilize a bunch of commands to modify the world. You an use  /wc m  with the subcommands  displayname ,  author ,  radius ,  center  or  gamemode  to change those.    To change markers (they should be currently visible), enter  /editmode on  and use the same commands you know already.    Once you are done, run  /editmode off  and  /wc m stop  to stop editing. This will let VGL do all the packaging, saving and uploading again and the changed map will be available to be used in games.", 
+            "text": "You can enter the edit mode again by running  /wm start  worldname . VGL will get the world, unzip it and load it, while teleporting you to the center.   Now you can utilize a bunch of commands to modify the world. You an use  /wm  with the subcommands  displayname ,  author ,  radius ,  center  or  gamemode  to change those.    To change markers (they should be currently visible), enter  /editmode on  and use the same commands you know already.    Once you are done, run  /editmode off  and  /wm stop  to stop editing. This will let VGL do all the packaging, saving and uploading again and the changed map will be available to be used in games.", 
             "title": "WorldCreator Modify Mode"
         }, 
         {
